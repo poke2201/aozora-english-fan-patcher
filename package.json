@@ -1,0 +1,13 @@
+{
+  "name": "aozora-english-fan-patcher",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Unofficial, local-only Aozora Refrain localization patcher",
+  "dependencies": {
+    "@electron/asar": "^3.4.1"
+  },
+  "scripts": {
+    "test": "node --test tests/*.test.cjs",
+    "test:smoke": "node tests/smoke.cjs"
+  }
+}

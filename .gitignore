@@ -1,8 +1,10 @@
 *.asar
 *.asar.unpacked/
 node_modules/
+runtime/
+release/
 *.zip
 *.log
 backups/
 temp/
-vendor/
+*.before_aozora_ui_patch
