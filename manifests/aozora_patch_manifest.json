@@ -1,0 +1,3025 @@
+{
+  "schema": 1,
+  "description": "v9 cumulative Settings localization: preserves v8 and removes Japanese day suffix from three Pregnancy & Contraception numeric slider badges only. Known deferred: Play Details action names and BGM track metadata.",
+  "sourceSha256": {
+    "dist/assets/main-DVhgjb_W.js": "ceb501b50ea9084a8891e14cd7748254915ca1e80e0279dacd679a27b8a7f5c7",
+    "dist/assets/index-TmdlfamN.js": "ef276bfeb1e37879fc463fd37289f240f4fc734c491eca3cc8ba96180945003e"
+  },
+  "panels": [
+    {
+      "id": "cast_gender_switch",
+      "bundle": "dist/assets/main-DVhgjb_W.js",
+      "start": "subtitle:\"登場キャスト・来店客の性別・出現比率・オメガバース設定\"",
+      "end": "e.jsx(Oi,{",
+      "maxLength": 25000,
+      "entries": [
+        {
+          "id": "subtitle",
+          "key": "settings.castPatch.subtitle",
+          "ja": "登場キャスト・来店客の性別・出現比率・オメガバース設定",
+          "en": "Cast and guest genders, spawn ratios, and omegaverse options",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "allSix",
+          "key": "settings.castPatch.allSix",
+          "ja": "🌈 全6性別",
+          "en": "🌈 All 6 genders",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "femaleOnly",
+          "key": "settings.castPatch.femaleOnly",
+          "ja": "🌸 女性のみ",
+          "en": "🌸 Female only",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "maleOnly",
+          "key": "settings.castPatch.maleOnly",
+          "ja": "👔 男性のみ",
+          "en": "👔 Male only",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "futanariOnly",
+          "key": "settings.castPatch.futanariOnly",
+          "ja": "🦄 ふたなり",
+          "en": "🦄 Futanari only",
+          "expectedOccurrences": 3
+        },
+        {
+          "id": "otokonokoOnly",
+          "key": "settings.castPatch.otokonokoOnly",
+          "ja": "🎀 男の娘",
+          "en": "🎀 Otokonoko only",
+          "expectedOccurrences": 3
+        },
+        {
+          "id": "both",
+          "key": "settings.castPatch.both",
+          "ja": "👥 男女両方",
+          "en": "👥 Female & male",
+          "expectedOccurrences": 2
+        },
+        {
+          "id": "weighted",
+          "key": "settings.castPatch.weighted",
+          "ja": "※重み付き抽選",
+          "en": "Weighted selection",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "female",
+          "key": "settings.castPatch.female",
+          "ja": "🌸 女性",
+          "en": "🌸 Female",
+          "expectedOccurrences": 3
+        },
+        {
+          "id": "maleCast",
+          "key": "settings.castPatch.maleCast",
+          "ja": "👔 男性(男娼)",
+          "en": "👔 Male cast",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "otokonoko",
+          "key": "settings.castPatch.otokonoko",
+          "ja": "🎀 男の娘",
+          "en": "🎀 Otokonoko",
+          "expectedOccurrences": 3
+        },
+        {
+          "id": "onnanoko",
+          "key": "settings.castPatch.onnanoko",
+          "ja": "🐺 雄んなの子",
+          "en": "🐺 Onnanoko",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "futanari",
+          "key": "settings.castPatch.futanari",
+          "ja": "🦄 ふたなり",
+          "en": "🦄 Futanari",
+          "expectedOccurrences": 3
+        },
+        {
+          "id": "custom",
+          "key": "settings.castPatch.custom",
+          "ja": "⚙️ カスタム",
+          "en": "⚙️ Custom",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "ratio",
+          "key": "settings.castPatch.ratio",
+          "ja": "比率",
+          "en": "Ratio",
+          "expectedOccurrences": 6
+        },
+        {
+          "id": "guestMaleOnly",
+          "key": "settings.castPatch.guestMaleOnly",
+          "ja": "👨 男性客",
+          "en": "👨 Male guests",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "guestFemaleOnly",
+          "key": "settings.castPatch.guestFemaleOnly",
+          "ja": "👩 女性客",
+          "en": "👩 Female guests",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "allGuests",
+          "key": "settings.castPatch.allGuests",
+          "ja": "🌈 全客層",
+          "en": "🌈 All guest types",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "maleGuestRatio",
+          "key": "settings.castPatch.maleGuestRatio",
+          "ja": "👨 男性客 比率",
+          "en": "👨 Male guest ratio",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "femaleGuestRatio",
+          "key": "settings.castPatch.femaleGuestRatio",
+          "ja": "👩 女性客 比率",
+          "en": "👩 Female guest ratio",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "futanariGuestRatio",
+          "key": "settings.castPatch.futanariGuestRatio",
+          "ja": "🦄 ふたなり客 比率",
+          "en": "🦄 Futanari guest ratio",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "sixGenderPref",
+          "key": "settings.castPatch.sixGenderPref",
+          "ja": "6性別指名",
+          "en": "6-gender preferences",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "male",
+          "key": "settings.castPatch.male",
+          "ja": "👔 男性",
+          "en": "👔 Male",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "malePregTitle",
+          "key": "settings.castPatch.malePregTitle",
+          "ja": "🧬 ♂ 男娼オメガバース・着腸妊娠",
+          "en": "🧬 Male cast: omegaverse & pregnancy",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "enabled",
+          "key": "settings.castPatch.enabled",
+          "ja": "有効",
+          "en": "Enabled",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "disabled",
+          "key": "settings.castPatch.disabled",
+          "ja": "無効",
+          "en": "Disabled",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "malePregDesc",
+          "key": "settings.castPatch.malePregDesc",
+          "ja": "男性キャストも男性客の中出しで着腸・妊娠します。",
+          "en": "Male cast members can become pregnant through sex with male guests.",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "genderPolicy",
+          "key": "settings.castPatch.genderPolicy",
+          "ja": "🎯 店舗の性的対象・登場性別ポリシー",
+          "en": "🎯 Cast and guest gender policy",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "appearingCast",
+          "key": "settings.castPatch.appearingCast",
+          "ja": "✨ 登場キャスト",
+          "en": "✨ Available cast",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "targetGuests",
+          "key": "settings.castPatch.targetGuests",
+          "ja": "👥 来店客対象",
+          "en": "👥 Target guests",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "bothShort",
+          "key": "settings.castPatch.bothShort",
+          "ja": "✨ 両方",
+          "en": "✨ Both",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "maleCastShort",
+          "key": "settings.castPatch.maleCastShort",
+          "ja": "🍆 男娼",
+          "en": "🍆 Male cast",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "bothGuests",
+          "key": "settings.castPatch.bothGuests",
+          "ja": "👥 両方",
+          "en": "👥 Both",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "maleShort",
+          "key": "settings.castPatch.maleShort",
+          "ja": "👨 男性",
+          "en": "👨 Male",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "femaleShort",
+          "key": "settings.castPatch.femaleShort",
+          "ja": "👩 女性",
+          "en": "👩 Female",
+          "expectedOccurrences": 1
+        }
+      ]
+    },
+    {
+      "id": "romance_dates",
+      "bundle": "dist/assets/main-DVhgjb_W.js",
+      "start": "Ae===\"romance\"&&e.jsxs(\"div\",",
+      "end": "Ae===\"pregnancy\"&&e.jsxs(\"div\",",
+      "maxLength": 12000,
+      "entries": [
+        {
+          "id": "subtitleRules",
+          "key": "settings.romancePatch.subtitleRules",
+          "ja": "告白・デート・スキンシップ・行為の解禁基準",
+          "en": "Affection requirements for dating, confession, intimacy, and sexual activities",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "dateAffectionHint",
+          "key": "settings.romancePatch.dateAffectionHint",
+          "ja": "キャストを最初のデートに誘うのに必要な好感度です。",
+          "en": "Minimum affection required to invite a cast member on a first date",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "kissAffectionHint",
+          "key": "settings.romancePatch.kissAffectionHint",
+          "ja": "キスやスキンシップを行うのに必要な好感度です。",
+          "en": "Minimum affection required for kissing and physical affection",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "confessionAffectionHint",
+          "key": "settings.romancePatch.confessionAffectionHint",
+          "ja": "告白して本命彼女（交際関係）に発展させるのに必要な好感度です。",
+          "en": "Minimum affection required to confess and begin a romantic relationship",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "sexAffectionHint",
+          "key": "settings.romancePatch.sexAffectionHint",
+          "ja": "コンドームありでの本番挿入を行うのに必要な好感度です。",
+          "en": "Minimum affection required for sex with a condom",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "creampieAffectionHint",
+          "key": "settings.romancePatch.creampieAffectionHint",
+          "ja": "避妊なし（生中出し）を許容するのに必要な好感度です。",
+          "en": "Minimum affection required to allow unprotected internal ejaculation",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "subtitleLocations",
+          "key": "settings.romancePatch.subtitleLocations",
+          "ja": "各デートスポットの解放に必要なデート回数",
+          "en": "Number of dates needed to unlock each location",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "dateHomeHint",
+          "key": "settings.romancePatch.dateHomeHint",
+          "ja": "おうちデートを解放するまでに必要な最低デート回数です。",
+          "en": "Minimum number of dates needed to unlock home dates",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "dateHotelHint",
+          "key": "settings.romancePatch.dateHotelHint",
+          "ja": "ホテルデートを解放するまでに必要な最低デート回数です。",
+          "en": "Minimum number of dates needed to unlock hotel dates",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "dateRestaurantHint",
+          "key": "settings.romancePatch.dateRestaurantHint",
+          "ja": "高級ディナーデートを解放するまでに必要な最低デート回数です。",
+          "en": "Minimum number of dates needed to unlock fine-dining dates",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "dateThemeParkHint",
+          "key": "settings.romancePatch.dateThemeParkHint",
+          "ja": "テーマパークデートを解放するまでに必要な最低デート回数です。",
+          "en": "Minimum number of dates needed to unlock theme park dates",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "dateCinemaHint",
+          "key": "settings.romancePatch.dateCinemaHint",
+          "ja": "映画館デートを解放するまでに必要な最低デート回数です。",
+          "en": "Minimum number of dates needed to unlock movie dates",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "dateKaraokeHint",
+          "key": "settings.romancePatch.dateKaraokeHint",
+          "ja": "カラオケデートを解放するまでに必要な最低デート回数です。",
+          "en": "Minimum number of dates needed to unlock karaoke dates",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "subtitleSuccess",
+          "key": "settings.romancePatch.subtitleSuccess",
+          "ja": "告白成功率・デート親密度・好感度の上昇倍率",
+          "en": "Romance success, intimacy, and affection gain multiplier",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "romanceSuccessHint",
+          "key": "settings.romancePatch.romanceSuccessHint",
+          "ja": "デートや告白、特別な会話などの成功判定にかかる全体の発生倍率です。",
+          "en": "Overall success-rate multiplier for dates, confessions, and special conversations",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "affectionGainHint",
+          "key": "settings.romancePatch.affectionGainHint",
+          "ja": "デートや日常のふれあいで得られる好感度・親密度の獲得倍率です。",
+          "en": "Affection and intimacy gain multiplier from dates and daily interactions",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "pureLoveTitle",
+          "key": "settings.romancePatch.pureLoveTitle",
+          "ja": "💌 本命彼女・純愛特典",
+          "en": "💌 Romantic Relationship Benefits",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "pureLoveDescription",
+          "key": "settings.romancePatch.pureLoveDescription",
+          "ja": "告白が成功して本命彼女になると、日々のメンタル自然回復や指導時の親愛ボーナスが発生します。元彼がいるキャストは告白成功時に元彼と自動的に破局します。",
+          "en": "When a confession succeeds and a cast member becomes your committed girlfriend, she gains daily mental recovery and affection bonuses during coaching. If she has an existing boyfriend, that relationship ends automatically upon a successful confession.",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "affectionGainLabel",
+          "key": "settings.romancePatch.affectionGainLabel",
+          "ja": "💖 親密度・好感度の上昇倍率",
+          "en": "💖 Intimacy & Affection Gain Multiplier",
+          "expectedOccurrences": 1
+        }
+      ]
+    },
+    {
+      "id": "sound_settings",
+      "bundle": "dist/assets/main-DVhgjb_W.js",
+      "start": "Ae===\"sound\"&&e.jsxs(\"div\"",
+      "end": "Ae===\"system\"&&e.jsxs(\"div\"",
+      "maxLength": 30000,
+      "entries": [
+        {
+          "id": "s001",
+          "key": "settings.soundPatch.s001",
+          "ja": "BGM音量",
+          "en": "BGM Volume",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s002",
+          "key": "settings.soundPatch.s002",
+          "ja": "効果音 (SE) 音量",
+          "en": "Sound Effects (SE) Volume",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s003",
+          "key": "settings.soundPatch.s003",
+          "ja": "ボイス音量",
+          "en": "Voice Volume",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s004",
+          "key": "settings.soundPatch.s004",
+          "ja": "🔇 全音声ミュート中",
+          "en": "🔇 All Audio Muted",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s005",
+          "key": "settings.soundPatch.s005",
+          "ja": "🔊 音声出力中",
+          "en": "🔊 Audio Enabled",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s006",
+          "key": "settings.soundPatch.s006",
+          "ja": "ウィンドウ非アクティブ時にゲーム音声・BGMを自動的に無音化します",
+          "en": "Automatically mute game audio and BGM when the window is inactive",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s007",
+          "key": "settings.soundPatch.s007",
+          "ja": "📴 画面外で自動消音: ON",
+          "en": "📴 Mute When Inactive: ON",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s008",
+          "key": "settings.soundPatch.s008",
+          "ja": "📢 画面外でも鳴らす: OFF",
+          "en": "📢 Play Audio in Background: OFF",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s009",
+          "key": "settings.soundPatch.s009",
+          "ja": "🎼 場面別BGMカスタマイザー ＆ 即時試聴（全26スロット）",
+          "en": "🎼 Per-Screen BGM Assignment & Preview (26 Slots)",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s010",
+          "key": "settings.soundPatch.s010",
+          "ja": "メイン画面・モーダル・シナリオADV・エンディングのBGMを暗号化保護音源＆ユーザー追加楽曲から自由カスタマイズ",
+          "en": "Assign bundled or custom BGM to game screens, menus, story scenes, and endings",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s011",
+          "key": "settings.soundPatch.s011",
+          "ja": "💡 全26画面・モーダル・ADVシーンごとに自由なBGMを割り当て可能です。",
+          "en": "💡 Assign a different BGM track to any of the 26 screens, dialogs, and story scenes",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s012",
+          "key": "settings.soundPatch.s012",
+          "ja": "「🎨 探す」を押すと、ジャンル・雰囲気・作曲者・ソート順から視覚的に試聴・選択できます。",
+          "en": "Use Browse to preview tracks and filter by genre, mood, composer, or sort order",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s013",
+          "key": "settings.soundPatch.s013",
+          "ja": "📁 ユーザー音声フォルダ",
+          "en": "📁 Custom Audio Folder",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s014",
+          "key": "settings.soundPatch.s014",
+          "ja": "BGM試聴停止",
+          "en": "Stop BGM Preview",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s015",
+          "key": "settings.soundPatch.s015",
+          "ja": "🏠 メインゲーム画面（9場面）",
+          "en": "🏠 Main Game Screens (9)",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s016",
+          "key": "settings.soundPatch.s016",
+          "ja": "ゲームの進行に伴って切り替わる基本画面のBGM",
+          "en": "BGM for main screens used throughout gameplay",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s017",
+          "key": "settings.soundPatch.s017",
+          "ja": "🏠 タイトル画面",
+          "en": "🏠 Title Screen",
+          "expectedOccurrences": 2
+        },
+        {
+          "id": "s018",
+          "key": "settings.soundPatch.s018",
+          "ja": "ゲーム起動時およびメインタイトル・設定中",
+          "en": "Game startup, title screen, and settings",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s019",
+          "key": "settings.soundPatch.s019",
+          "ja": "☀️ 昼間ロビー・店舗経営",
+          "en": "☀️ Day Lobby & Management",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s020",
+          "key": "settings.soundPatch.s020",
+          "ja": "昼間の店舗管理・編成・業務画面",
+          "en": "Daytime store management and operations",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s021",
+          "key": "settings.soundPatch.s021",
+          "ja": "🔍 スカウト・面接画面",
+          "en": "🔍 Scouting & Interviews",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s022",
+          "key": "settings.soundPatch.s022",
+          "ja": "ストリートスカウト・面接実施時",
+          "en": "Street scouting and interviews",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s023",
+          "key": "settings.soundPatch.s023",
+          "ja": "🛒 ショップ・購買部",
+          "en": "🛒 Shop & Supplies",
+          "expectedOccurrences": 2
+        },
+        {
+          "id": "s024",
+          "key": "settings.soundPatch.s024",
+          "ja": "アイテム購入・消耗品仕入れ画面",
+          "en": "Buying items and restocking supplies",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s025",
+          "key": "settings.soundPatch.s025",
+          "ja": "☕ 控え室・キャスト交流",
+          "en": "☕ Break Room & Cast Interaction",
+          "expectedOccurrences": 2
+        },
+        {
+          "id": "s026",
+          "key": "settings.soundPatch.s026",
+          "ja": "キャスト控え室・個別会話・休憩室",
+          "en": "Cast lounge, conversations, and breaks",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s027",
+          "key": "settings.soundPatch.s027",
+          "ja": "💼 事務室・帳簿・金庫",
+          "en": "💼 Office & Finances",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s028",
+          "key": "settings.soundPatch.s028",
+          "ja": "経営データ確認・帳簿・経費管理",
+          "en": "Business reports, bookkeeping, and expenses",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s029",
+          "key": "settings.soundPatch.s029",
+          "ja": "👑 VIPルーム・特別個室",
+          "en": "👑 VIP Room & Private Suites",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s030",
+          "key": "settings.soundPatch.s030",
+          "ja": "富裕層VIP専用個室・特別応接室",
+          "en": "Private rooms and reception for VIP guests",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s031",
+          "key": "settings.soundPatch.s031",
+          "ja": "🌙 夜間ロビー・待機",
+          "en": "🌙 Night Lobby & Waiting",
+          "expectedOccurrences": 2
+        },
+        {
+          "id": "s032",
+          "key": "settings.soundPatch.s032",
+          "ja": "夜間営業前の待機・準備ロビー",
+          "en": "Preparation and waiting before evening service",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s033",
+          "key": "settings.soundPatch.s033",
+          "ja": "🔥 夜営業シミュレーション",
+          "en": "🔥 Night Service Simulation",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s034",
+          "key": "settings.soundPatch.s034",
+          "ja": "夜間接客・行為進行シミュレーション時",
+          "en": "Evening guest service simulation",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s035",
+          "key": "settings.soundPatch.s035",
+          "ja": "🗂️ モーダル・システム画面（10場面）",
+          "en": "🗂️ Menus & System Screens (10)",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s036",
+          "key": "settings.soundPatch.s036",
+          "ja": "各種メニュー・特別室・リザルト表示時のBGM",
+          "en": "BGM for menus, special rooms, and results",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s037",
+          "key": "settings.soundPatch.s037",
+          "ja": "🚪 客入室マッチング",
+          "en": "🚪 Guest Room Assignment",
+          "expectedOccurrences": 2
+        },
+        {
+          "id": "s038",
+          "key": "settings.soundPatch.s038",
+          "ja": "夜間営業の客部屋アサイン画面",
+          "en": "Assigning guests to rooms during night service",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s039",
+          "key": "settings.soundPatch.s039",
+          "ja": "🚪 特別指導室（Coaching）",
+          "en": "🚪 Private Coaching Room",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s040",
+          "key": "settings.soundPatch.s040",
+          "ja": "キャストの特別レッスン・プライベート指導時",
+          "en": "Private coaching and special cast lessons",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s041",
+          "key": "settings.soundPatch.s041",
+          "ja": "⛓️ 調教・密会ルーム",
+          "en": "⛓️ Training & Secret Meetings",
+          "expectedOccurrences": 2
+        },
+        {
+          "id": "s042",
+          "key": "settings.soundPatch.s042",
+          "ja": "裏営業・絶対支配・調教密会時",
+          "en": "Underground activities and private encounters",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s043",
+          "key": "settings.soundPatch.s043",
+          "ja": "📊 営業結果発表・精算",
+          "en": "📊 Business Results & Settlement",
+          "expectedOccurrences": 2
+        },
+        {
+          "id": "s044",
+          "key": "settings.soundPatch.s044",
+          "ja": "深夜営業終了後の売上集計・精算画面",
+          "en": "Nightly revenue totals and settlement",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s045",
+          "key": "settings.soundPatch.s045",
+          "ja": "🚨 妊娠・緊急リザルト",
+          "en": "🚨 Pregnancy & Emergency Results",
+          "expectedOccurrences": 2
+        },
+        {
+          "id": "s046",
+          "key": "settings.soundPatch.s046",
+          "ja": "妊娠発覚・警察手入れ等の非常事態精算",
+          "en": "Pregnancy discovery or other emergency results",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s047",
+          "key": "settings.soundPatch.s047",
+          "ja": "👥 キャスト名簿・カルテ",
+          "en": "👥 Cast Roster & Profiles",
+          "expectedOccurrences": 2
+        },
+        {
+          "id": "s048",
+          "key": "settings.soundPatch.s048",
+          "ja": "キャスト一覧・詳細ステータス画面",
+          "en": "Cast roster and detailed profiles",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s049",
+          "key": "settings.soundPatch.s049",
+          "ja": "👔 顧客名簿・詳細カルテ",
+          "en": "👔 Guest Roster & Profiles",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s050",
+          "key": "settings.soundPatch.s050",
+          "ja": "常連客・VIP客・彼氏カルテ閲覧",
+          "en": "Regular guests, VIPs, and boyfriends",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s051",
+          "key": "settings.soundPatch.s051",
+          "ja": "🏢 施設拡張・設備投資",
+          "en": "🏢 Facility Upgrades & Investment",
+          "expectedOccurrences": 2
+        },
+        {
+          "id": "s052",
+          "key": "settings.soundPatch.s052",
+          "ja": "店舗改装・設備投資・セキュリティ強化",
+          "en": "Renovation, equipment upgrades, and security",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s053",
+          "key": "settings.soundPatch.s053",
+          "ja": "🖼️ 回想・フリーメモリ",
+          "en": "🖼️ Memories & Gallery",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s054",
+          "key": "settings.soundPatch.s054",
+          "ja": "フリー回想・CG鑑賞・アルバム閲覧画面",
+          "en": "Free replay, CG gallery, and albums",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s055",
+          "key": "settings.soundPatch.s055",
+          "ja": "⚙️ 設定モーダル",
+          "en": "⚙️ Settings Menu",
+          "expectedOccurrences": 2
+        },
+        {
+          "id": "s056",
+          "key": "settings.soundPatch.s056",
+          "ja": "システム設定・各種バランス調整画面",
+          "en": "System settings and game balance controls",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s057",
+          "key": "settings.soundPatch.s057",
+          "ja": "📖 シナリオ・イベントADVパート（7場面）",
+          "en": "📖 Story & Event Scenes (7)",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s058",
+          "key": "settings.soundPatch.s058",
+          "ja": "ストーリー会話・イベント演出発生時の自動選定BGM",
+          "en": "BGM during story dialogue and events",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s059",
+          "key": "settings.soundPatch.s059",
+          "ja": "🌸 日常会話・雑談",
+          "en": "🌸 Daily Conversation",
+          "expectedOccurrences": 2
+        },
+        {
+          "id": "s060",
+          "key": "settings.soundPatch.s060",
+          "ja": "ヒロインたちとの何気ない日常・コミカルな会話",
+          "en": "Everyday conversations and lighthearted moments",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s061",
+          "key": "settings.soundPatch.s061",
+          "ja": "💕 純愛デート・夕暮れ",
+          "en": "💕 Romance Dates & Twilight",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s062",
+          "key": "settings.soundPatch.s062",
+          "ja": "甘いデート・夕暮れ・二人だけの秘密の告白",
+          "en": "Romantic dates, twilight, and private confessions",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s063",
+          "key": "settings.soundPatch.s063",
+          "ja": "🔞 淫靡・行為・密会",
+          "en": "🔞 Intimate Encounters",
+          "expectedOccurrences": 2
+        },
+        {
+          "id": "s064",
+          "key": "settings.soundPatch.s064",
+          "ja": "VIP個室での密会・甘美な接客・センシュアルシーン",
+          "en": "VIP private encounters and intimate scenes",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s065",
+          "key": "settings.soundPatch.s065",
+          "ja": "⚡ 緊迫・対峙・修羅場",
+          "en": "⚡ Tension & Confrontation",
+          "expectedOccurrences": 2
+        },
+        {
+          "id": "s066",
+          "key": "settings.soundPatch.s066",
+          "ja": "借金取り立て・黒崎の影・裏社会トラブル",
+          "en": "Debt collection and underworld conflicts",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s067",
+          "key": "settings.soundPatch.s067",
+          "ja": "💧 切ない・感動・心の涙",
+          "en": "💧 Sadness & Emotion",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s068",
+          "key": "settings.soundPatch.s068",
+          "ja": "別れ・ヒロインのトラウマ告白・心の葛藤",
+          "en": "Goodbyes, painful memories, and inner conflict",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s069",
+          "key": "settings.soundPatch.s069",
+          "ja": "✨ コミカル・ギャグ・笑い",
+          "en": "✨ Comedy & Humor",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s070",
+          "key": "settings.soundPatch.s070",
+          "ja": "ドタバタ劇・勘違い・コミカルイベント",
+          "en": "Comic misunderstandings and funny events",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s071",
+          "key": "settings.soundPatch.s071",
+          "ja": "🏆 勝利・カタルシス・決意",
+          "en": "🏆 Victory & Resolve",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s072",
+          "key": "settings.soundPatch.s072",
+          "ja": "借金完済・困難克服・感動のクライマックス",
+          "en": "Paying off debts and overcoming adversity",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s073",
+          "key": "settings.soundPatch.s073",
+          "ja": "💍 エンディング各種（3場面）",
+          "en": "💍 Ending Scenes (3)",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s074",
+          "key": "settings.soundPatch.s074",
+          "ja": "ストーリー結末・スタッフロール時のBGM",
+          "en": "BGM for endings and credits",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s075",
+          "key": "settings.soundPatch.s075",
+          "ja": "📜 通常エンディング",
+          "en": "📜 Normal Ending",
+          "expectedOccurrences": 2
+        },
+        {
+          "id": "s076",
+          "key": "settings.soundPatch.s076",
+          "ja": "標準的な営業期間終了時のエンディング",
+          "en": "Standard ending after the management period",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s077",
+          "key": "settings.soundPatch.s077",
+          "ja": "💍 トゥルーエンド（大団円）",
+          "en": "💍 True Ending",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s078",
+          "key": "settings.soundPatch.s078",
+          "ja": "最愛のヒロインと未来を誓い合う大団円フィナーレ",
+          "en": "A happy ending together with the heroine",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s079",
+          "key": "settings.soundPatch.s079",
+          "ja": "🌑 バッドエンド（闇堕ち・支配）",
+          "en": "🌑 Bad Ending",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s080",
+          "key": "settings.soundPatch.s080",
+          "ja": "完全支配・裏社会堕ち・破滅のエンディング",
+          "en": "A dark ending of domination and ruin",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s081",
+          "key": "settings.soundPatch.s081",
+          "ja": " スロット",
+          "en": " slots",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s082",
+          "key": "settings.soundPatch.s082",
+          "ja": "📁 ユーザー追加楽曲 (Custom)",
+          "en": "📁 Custom Tracks",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s083",
+          "key": "settings.soundPatch.s083",
+          "ja": "🌸 日常・店舗・ポップ（たう, shimtone）",
+          "en": "🌸 Daily Life & Pop (Taw, shimtone)",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s084",
+          "key": "settings.soundPatch.s084",
+          "ja": "[🌸日常] ",
+          "en": "[🌸 Daily] ",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s085",
+          "key": "settings.soundPatch.s085",
+          "ja": "☕ カフェ・Lo-fi・チルアウト（たう）",
+          "en": "☕ Café & Chill (Taw)",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s086",
+          "key": "settings.soundPatch.s086",
+          "ja": "💕 純愛・デート・アコースティック（たう, shimtone）",
+          "en": "💕 Romance & Acoustic (Taw, shimtone)",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s087",
+          "key": "settings.soundPatch.s087",
+          "ja": "[💕純愛] ",
+          "en": "[💕 Romance] ",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s088",
+          "key": "settings.soundPatch.s088",
+          "ja": "🌙 夜営業・官能・指導室（たう, もっぴーさうんど）",
+          "en": "🌙 Night Service & Intimacy (Taw, Moppy Sound)",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s089",
+          "key": "settings.soundPatch.s089",
+          "ja": "[🌙官能] ",
+          "en": "[🌙 Intimate] ",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s090",
+          "key": "settings.soundPatch.s090",
+          "ja": "⚡ サスペンス・緊迫・ロック（こっけ, たう）",
+          "en": "⚡ Suspense & Rock (Kokke, Taw)",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s091",
+          "key": "settings.soundPatch.s091",
+          "ja": "[⚡緊迫] ",
+          "en": "[⚡ Tension] ",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s092",
+          "key": "settings.soundPatch.s092",
+          "ja": "💧 悲哀・雨・孤独（KK, たう）",
+          "en": "💧 Sadness & Rain (KK, Taw)",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s093",
+          "key": "settings.soundPatch.s093",
+          "ja": "[💧悲哀] ",
+          "en": "[💧 Sadness] ",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s094",
+          "key": "settings.soundPatch.s094",
+          "ja": "💍 エンディング・大団円・クラシック（たう）",
+          "en": "💍 Endings & Classical (Taw)",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s095",
+          "key": "settings.soundPatch.s095",
+          "ja": "全曲から雰囲気・カテゴリ・検索・ソートで視覚的に選ぶ",
+          "en": "Browse all tracks by mood, category, search, or sort order",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s096",
+          "key": "settings.soundPatch.s096",
+          "ja": "探す",
+          "en": "Browse",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s097",
+          "key": "settings.soundPatch.s097",
+          "ja": "停止",
+          "en": "Stop",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s098",
+          "key": "settings.soundPatch.s098",
+          "ja": "試聴",
+          "en": "Preview",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s099",
+          "key": "settings.soundPatch.s099",
+          "ja": "🔒保護",
+          "en": "🔒 Protected",
+          "expectedOccurrences": 2
+        },
+        {
+          "id": "s100",
+          "key": "settings.soundPatch.s100",
+          "ja": "雰囲気・カテゴリ・作曲者別フィルター、インクリメンタル検索、即時試聴、ワンクリック場面割当",
+          "en": "Filter by mood, category, or composer; search, preview, and assign tracks",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s101",
+          "key": "settings.soundPatch.s101",
+          "ja": "🎵 全",
+          "en": "🎵 All ",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s102",
+          "key": "settings.soundPatch.s102",
+          "ja": "曲の暗号化保護 ＆ ユーザーカスタムBGMコレクション",
+          "en": " encrypted tracks & custom BGM collection",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s103",
+          "key": "settings.soundPatch.s103",
+          "ja": "試聴再生やお好みのゲーム画面へのダイレクト割り当てが可能です。",
+          "en": "Preview tracks and assign them to a game screen",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s104",
+          "key": "settings.soundPatch.s104",
+          "ja": "再生停止",
+          "en": "Stop Preview",
+          "expectedOccurrences": 2
+        },
+        {
+          "id": "s105",
+          "key": "settings.soundPatch.s105",
+          "ja": "すべて (全曲)",
+          "en": "All Tracks",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s106",
+          "key": "settings.soundPatch.s106",
+          "ja": "🌸 日常・店舗",
+          "en": "🌸 Daily Life & Shop",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s107",
+          "key": "settings.soundPatch.s107",
+          "ja": "☕ カフェ・Chill",
+          "en": "☕ Café & Chill",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s108",
+          "key": "settings.soundPatch.s108",
+          "ja": "💕 純愛・デート",
+          "en": "💕 Romance & Dates",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s109",
+          "key": "settings.soundPatch.s109",
+          "ja": "🌙 夜・官能・指導室",
+          "en": "🌙 Night & Intimacy",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s110",
+          "key": "settings.soundPatch.s110",
+          "ja": "⚡ 緊迫・サスペンス",
+          "en": "⚡ Tension & Suspense",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s111",
+          "key": "settings.soundPatch.s111",
+          "ja": "💧 悲哀・雨・孤独",
+          "en": "💧 Sadness & Rain",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s112",
+          "key": "settings.soundPatch.s112",
+          "ja": "💍 ED・大団円",
+          "en": "💍 Endings",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s113",
+          "key": "settings.soundPatch.s113",
+          "ja": "📁 ユーザー追加",
+          "en": "📁 Custom Tracks",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s114",
+          "key": "settings.soundPatch.s114",
+          "ja": "作曲者:",
+          "en": "Composer:",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s115",
+          "key": "settings.soundPatch.s115",
+          "ja": "すべての作曲者",
+          "en": "All Composers",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s116",
+          "key": "settings.soundPatch.s116",
+          "ja": "ユーザー追加",
+          "en": "Custom",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s117",
+          "key": "settings.soundPatch.s117",
+          "ja": "🔍 曲名・タグ・雰囲気・シーンで検索...",
+          "en": "🔍 Search titles, tags, mood, or scenes...",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s118",
+          "key": "settings.soundPatch.s118",
+          "ja": "クリア",
+          "en": "Clear",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s119",
+          "key": "settings.soundPatch.s119",
+          "ja": "表示中: ",
+          "en": "Showing: ",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s120",
+          "key": "settings.soundPatch.s120",
+          "ja": " 曲",
+          "en": " tracks",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s121",
+          "key": "settings.soundPatch.s121",
+          "ja": "作曲: ",
+          "en": "Composed by: ",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s122",
+          "key": "settings.soundPatch.s122",
+          "ja": "試聴する",
+          "en": "Preview Track",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s123",
+          "key": "settings.soundPatch.s123",
+          "ja": "場面割当:",
+          "en": "Assign to Scene:",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s124",
+          "key": "settings.soundPatch.s124",
+          "ja": "画面を選択して設定...",
+          "en": "Choose a screen...",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s125",
+          "key": "settings.soundPatch.s125",
+          "ja": "🏠 メイン画面（9場面）",
+          "en": "🏠 Main Screens (9)",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s126",
+          "key": "settings.soundPatch.s126",
+          "ja": "☀️ 昼間ロビー・経営管理",
+          "en": "☀️ Day Lobby & Management",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s127",
+          "key": "settings.soundPatch.s127",
+          "ja": "🔍 スカウト・面接",
+          "en": "🔍 Scouting & Interviews",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s128",
+          "key": "settings.soundPatch.s128",
+          "ja": "💼 事務室・帳簿",
+          "en": "💼 Office & Finances",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s129",
+          "key": "settings.soundPatch.s129",
+          "ja": "👑 VIPルーム",
+          "en": "👑 VIP Room",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s130",
+          "key": "settings.soundPatch.s130",
+          "ja": "🔥 夜営業シミュ",
+          "en": "🔥 Night Service",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s131",
+          "key": "settings.soundPatch.s131",
+          "ja": "🗂️ モーダル画面（10場面）",
+          "en": "🗂️ Menus (10)",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s132",
+          "key": "settings.soundPatch.s132",
+          "ja": "🚪 特別指導室 (Coaching)",
+          "en": "🚪 Private Coaching Room",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s133",
+          "key": "settings.soundPatch.s133",
+          "ja": "👔 顧客名簿・詳細",
+          "en": "👔 Guest Profiles",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s134",
+          "key": "settings.soundPatch.s134",
+          "ja": "🖼️ 回想・CGギャラリー",
+          "en": "🖼️ Memories & Gallery",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s135",
+          "key": "settings.soundPatch.s135",
+          "ja": "📖 シナリオADV（7場面）",
+          "en": "📖 Story Scenes (7)",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s136",
+          "key": "settings.soundPatch.s136",
+          "ja": "💕 純愛デート・告白",
+          "en": "💕 Romance Dates & Confessions",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s137",
+          "key": "settings.soundPatch.s137",
+          "ja": "💧 切ない・感動・涙",
+          "en": "💧 Sadness & Emotion",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s138",
+          "key": "settings.soundPatch.s138",
+          "ja": "✨ コミカル・ギャグ",
+          "en": "✨ Comedy",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s139",
+          "key": "settings.soundPatch.s139",
+          "ja": "🏆 勝利・カタルシス",
+          "en": "🏆 Victory & Resolve",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s140",
+          "key": "settings.soundPatch.s140",
+          "ja": "💍 エンディング（3場面）",
+          "en": "💍 Endings (3)",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s141",
+          "key": "settings.soundPatch.s141",
+          "ja": "💍 トゥルーエンド",
+          "en": "💍 True Ending",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s142",
+          "key": "settings.soundPatch.s142",
+          "ja": "🌑 バッドエンド",
+          "en": "🌑 Bad Ending",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s143",
+          "key": "settings.soundPatch.s143",
+          "ja": "📜 音楽素材提供・クレジット一覧（暗号化保護音源・全曲対応）",
+          "en": "📜 Music Sources & Credits (All Tracks)",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s144",
+          "key": "settings.soundPatch.s144",
+          "ja": "商用利用・ゲーム利用ライセンス確認済み",
+          "en": "Commercial and game-use licenses verified",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s145",
+          "key": "settings.soundPatch.s145",
+          "ja": "【BGM素材提供元・著作者】",
+          "en": "【BGM Sources & Composers】",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s146",
+          "key": "settings.soundPatch.s146",
+          "ja": "🔊 効果音 (SE) サウンドボード＆テスト再生",
+          "en": "🔊 Sound Effects (SE) Test Board",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s147",
+          "key": "settings.soundPatch.s147",
+          "ja": "ゲーム内で再生される各種効果音の音色確認とテスト再生",
+          "en": "Preview and test the game's sound effects",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s148",
+          "key": "settings.soundPatch.s148",
+          "ja": "ボタンをクリックすると、設定されたSE音量で各効果音が即座にテスト再生されます。",
+          "en": "Click a button to play its sound effect at the configured SE volume",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s149",
+          "key": "settings.soundPatch.s149",
+          "ja": "✅ 決定音",
+          "en": "✅ Confirm",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s150",
+          "key": "settings.soundPatch.s150",
+          "ja": "❌ キャンセル音",
+          "en": "❌ Cancel",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s151",
+          "key": "settings.soundPatch.s151",
+          "ja": "🖱️ クリック音",
+          "en": "🖱️ Click",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s152",
+          "key": "settings.soundPatch.s152",
+          "ja": "💰 お金・購入音",
+          "en": "💰 Money / Purchase",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s153",
+          "key": "settings.soundPatch.s153",
+          "ja": "⭐ レベルアップ音",
+          "en": "⭐ Level Up",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s154",
+          "key": "settings.soundPatch.s154",
+          "ja": "💓 心拍・緊張音",
+          "en": "💓 Heartbeat / Tension",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s155",
+          "key": "settings.soundPatch.s155",
+          "ja": "⚡ ショック音",
+          "en": "⚡ Shock",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s156",
+          "key": "settings.soundPatch.s156",
+          "ja": "💧 水音・愛液音",
+          "en": "💧 Liquid Sound",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s157",
+          "key": "settings.soundPatch.s157",
+          "ja": "✨ キラキラ音",
+          "en": "✨ Sparkle",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "s158",
+          "key": "settings.soundPatch.s158",
+          "ja": "🚪 ドア開閉音",
+          "en": "🚪 Door Open / Close",
+          "expectedOccurrences": 1
+        }
+      ]
+    },
+    {
+      "id": "system_settings",
+      "bundle": "dist/assets/main-DVhgjb_W.js",
+      "start": "Ae===\"system\"&&e.jsxs(\"div\"",
+      "end": "Ae===\"edition\"&&o&&e.jsx(\"div\"",
+      "maxLength": 18000,
+      "entries": [
+        {
+          "id": "sys001",
+          "key": "settings.systemPatch.sys001",
+          "ja": "操作・スキップ・オートセーブ・スキップ挙動の設定",
+          "en": "Controls, Skipping, Auto-Save & Skip Behavior",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "sys002",
+          "key": "settings.systemPatch.sys002",
+          "ja": "画面表示モード (1600×900 / 全画面最適化)",
+          "en": "Display Mode (1600×900 / Fullscreen Optimization)",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "sys003",
+          "key": "settings.systemPatch.sys003",
+          "ja": "通常時は1600×900固定、全画面時は16:9比率を維持したまま拡大スケーリングします。(F11キー対応)",
+          "en": "Windowed mode runs at 1600×900; fullscreen scales while preserving the 16:9 aspect ratio (F11 supported)",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "sys004",
+          "key": "settings.systemPatch.sys004",
+          "ja": "全画面切替 (F11)",
+          "en": "Toggle Fullscreen (F11)",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "sys005",
+          "key": "settings.systemPatch.sys005",
+          "ja": "ADVメッセージスキップ設定",
+          "en": "Dialogue Skip Settings",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "sys006",
+          "key": "settings.systemPatch.sys006",
+          "ja": "ADVパートのスキップ実行時の挙動を指定します。「既読のみ」に設定すると未読テキストで安全に自動停止します。",
+          "en": "Choose how dialogue skipping works in ADV scenes. Read-only mode automatically stops at unread dialogue",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "sys007",
+          "key": "settings.systemPatch.sys007",
+          "ja": "🛡️ 既読のみスキップ (推奨)",
+          "en": "🛡️ Skip Read Dialogue Only (Recommended)",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "sys008",
+          "key": "settings.systemPatch.sys008",
+          "ja": "⚡ 未読もスキップ (強制)",
+          "en": "⚡ Skip Read and Unread Dialogue (Forced)",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "sys009",
+          "key": "settings.systemPatch.sys009",
+          "ja": "有効にすると、日跨ぎ（夜間営業終了・休日終了）時にセーブスロット0（AUTOSAVE）へ自動保存します。",
+          "en": "Automatically save to slot 0 (AUTOSAVE) when the day advances after business hours or a day off",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "sys010",
+          "key": "settings.systemPatch.sys010",
+          "ja": "通常/エンドレスモード開始時にオーナープロファイルの初期設定画面をスキップします。",
+          "en": "Skip the initial owner profile setup when starting Normal or Endless mode",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "sys011",
+          "key": "settings.systemPatch.sys011",
+          "ja": "最初から開始する際、既存セーブデータの上書き確認ダイアログを表示せず即時開始します。",
+          "en": "Start a new game immediately without asking to confirm overwriting existing save data",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "sys012",
+          "key": "settings.systemPatch.sys012",
+          "ja": "各場面の背景CG演出・透過度・カスタム背景設定",
+          "en": "Scene Background CG, Opacity & Custom Background Settings",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "sys013",
+          "key": "settings.systemPatch.sys013",
+          "ja": "🏛️ 場面連動・背景CGシステム",
+          "en": "🏛️ Contextual Background CG System",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "sys014",
+          "key": "settings.systemPatch.sys014",
+          "ja": "控室・執務室・夜間フロアなど各場面に適したCGを背景に薄く表示します。",
+          "en": "Subtly display background CG suited to each scene, such as the lounge, office, or night floor",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "sys015",
+          "key": "settings.systemPatch.sys015",
+          "ja": "ON (有効)",
+          "en": "ON (Enabled)",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "sys016",
+          "key": "settings.systemPatch.sys016",
+          "ja": "OFF (無効)",
+          "en": "OFF (Disabled)",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "sys017",
+          "key": "settings.systemPatch.sys017",
+          "ja": "場面背景の不透明度 (薄さ調整)",
+          "en": "Scene Background Opacity",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "sys018",
+          "key": "settings.systemPatch.sys018",
+          "ja": "極薄 5%",
+          "en": "Very Faint 5%",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "sys019",
+          "key": "settings.systemPatch.sys019",
+          "ja": "標準 16%",
+          "en": "Standard 16%",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "sys020",
+          "key": "settings.systemPatch.sys020",
+          "ja": "濃いめ 40%",
+          "en": "Strong 40%",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "sys021",
+          "key": "settings.systemPatch.sys021",
+          "ja": "🖼️ 全体カスタム背景画像",
+          "en": "🖼️ Global Custom Background Image",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "sys022",
+          "key": "settings.systemPatch.sys022",
+          "ja": "解除",
+          "en": "Remove",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "sys023",
+          "key": "settings.systemPatch.sys023",
+          "ja": "📤 背景画像をアップロード",
+          "en": "📤 Upload Background Image",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "sys024",
+          "key": "settings.systemPatch.sys024",
+          "ja": "📂 custom_chars/ フォルダ連携",
+          "en": "📂 custom_chars/ Folder Integration",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "sys025",
+          "key": "settings.systemPatch.sys025",
+          "ja": "フォルダを開く",
+          "en": "Open Folder",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "sys026",
+          "key": "settings.systemPatch.sys026",
+          "ja": "`custom_chars/` フォルダ内に立ち絵や行為別CGを配置すると自動認識・同期されます。",
+          "en": "Portraits and act-specific CG placed in the `custom_chars/` folder are automatically detected and synchronized",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "sys027",
+          "key": "settings.systemPatch.sys027",
+          "ja": "ゲーム解像度・拡大縮小・フルスクリーン設定",
+          "en": "Game Resolution, Scaling & Fullscreen Settings",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "sys028",
+          "key": "settings.systemPatch.sys028",
+          "ja": "1600 × 900 (標準)",
+          "en": "1600 × 900 (Standard)",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "sys029",
+          "key": "settings.systemPatch.sys029",
+          "ja": "🖥️ フルスクリーン (F11)",
+          "en": "🖥️ Fullscreen (F11)",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "sys030",
+          "key": "settings.systemPatch.sys030",
+          "ja": "進行中データを保存してタイトル画面へ戻る",
+          "en": "Save Progress & Return to Title",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "sys031",
+          "key": "settings.systemPatch.sys031",
+          "ja": "🚪 タイトル画面へ戻る",
+          "en": "🚪 Return to Title",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "sys032",
+          "key": "settings.systemPatch.sys032",
+          "ja": "現在の進行状況を保存してタイトルへ戻ります。",
+          "en": "Save your current progress and return to the title screen",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "sys033",
+          "key": "settings.systemPatch.sys033",
+          "ja": "🚪 タイトルへ",
+          "en": "🚪 To Title",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "sys034",
+          "key": "settings.systemPatch.sys034",
+          "ja": "全実績・クリア状況・周回ポイントの初期化",
+          "en": "Reset Achievements, Completion Status & Bonus Points",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "sys035",
+          "key": "settings.systemPatch.sys035",
+          "ja": "🏆 実績・全クリア状態のリセット",
+          "en": "🏆 Reset Achievements & Completion",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "sys036",
+          "key": "settings.systemPatch.sys036",
+          "ja": "解除された全実績、全エンディング達成状況、および周回ポイントをリセットし初期状態に戻します。",
+          "en": "Reset all unlocked achievements, ending completion records, and bonus points to their initial state",
+          "expectedOccurrences": 1
+        },
+        {
+          "id": "sys037",
+          "key": "settings.systemPatch.sys037",
+          "ja": "実績・クリアデータを完全初期化する",
+          "en": "Fully Reset Achievements & Completion Data",
+          "expectedOccurrences": 1
+        }
+      ]
+    }
+  ],
+  "dictionaryEdits": [
+    {
+      "id": "romance_protected_sex_label",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "creampieAffectionReq:",
+      "maxLength": 20000,
+      "key": "insertAffectionReq",
+      "from": "🔞 Required Affection for Sex",
+      "to": "🔞 Required Affection for Protected Sex"
+    },
+    {
+      "id": "classmate_discount_description",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "discountRateRelativeHint:",
+      "maxLength": 25000,
+      "key": "discountRateClassmateHint",
+      "from": "Revenue reduction rate when a classmate is served. Higher means less revenue.",
+      "to": "Percentage of the normal price paid by classmates. Lower values mean a larger discount"
+    },
+    {
+      "id": "v7_management_period_taxRateHint",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "globalEventEnabledHint:",
+      "maxLength": 25000,
+      "key": "taxRateHint",
+      "from": "Percentage of gross profit collected as taxes after night business.",
+      "to": "Percentage of gross profit collected as taxes after night business"
+    },
+    {
+      "id": "v7_management_period_rentMultiplierHint",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "globalEventEnabledHint:",
+      "maxLength": 25000,
+      "key": "rentMultiplierHint",
+      "from": "Multiplier for base shop rent.",
+      "to": "Multiplier for base shop rent"
+    },
+    {
+      "id": "v7_management_period_costPerMaidMultiplierHint",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "globalEventEnabledHint:",
+      "maxLength": 25000,
+      "key": "costPerMaidMultiplierHint",
+      "from": "Multiplier for maintenance cost per working cast.",
+      "to": "Multiplier for maintenance cost per working cast"
+    },
+    {
+      "id": "v7_management_period_childcareCostMultiplierHint",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "globalEventEnabledHint:",
+      "maxLength": 25000,
+      "key": "childcareCostMultiplierHint",
+      "from": "Multiplier for childcare expenses per dependent child.",
+      "to": "Multiplier for childcare expenses per dependent child"
+    },
+    {
+      "id": "v7_management_period_revenueMultiplierHint",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "globalEventEnabledHint:",
+      "maxLength": 25000,
+      "key": "revenueMultiplierHint",
+      "from": "Base multiplier applied to all service revenue (Base Revenue + Act Fees).",
+      "to": "Base multiplier applied to all service revenue (Base Revenue + Act Fees)"
+    },
+    {
+      "id": "v7_management_period_gueststaminaConsumptionMultHint",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "globalEventEnabledHint:",
+      "maxLength": 25000,
+      "key": "gueststaminaConsumptionMultHint",
+      "from": "Multiplier for cast mental and stamina consumption during service. Lower means less drain.",
+      "to": "Multiplier for cast mental and stamina consumption during service. Lower means less drain"
+    },
+    {
+      "id": "v7_management_period_baseRevenueRateHint",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "globalEventEnabledHint:",
+      "maxLength": 25000,
+      "key": "baseRevenueRateHint",
+      "from": "Multiplier for base room fee calculated from cast stats.",
+      "to": "Multiplier for base room fee calculated from cast stats"
+    },
+    {
+      "id": "v7_management_period_playRevenueRateHint",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "globalEventEnabledHint:",
+      "maxLength": 25000,
+      "key": "playRevenueRateHint",
+      "from": "Multiplier applied to base rates of various acts during service.",
+      "to": "Multiplier applied to base rates of various acts during service"
+    },
+    {
+      "id": "v7_management_period_wageRateHint",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "globalEventEnabledHint:",
+      "maxLength": 25000,
+      "key": "wageRateHint",
+      "from": "Percentage of night revenue taken by casts. Lower means higher profit for owner.",
+      "to": "Percentage of night revenue taken by casts. Lower means higher profit for owner"
+    },
+    {
+      "id": "v7_management_period_expForRankHint",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "globalEventEnabledHint:",
+      "maxLength": 25000,
+      "key": "expForRankHint",
+      "from": "Base EXP required for casts to rank up.",
+      "to": "Base EXP required for casts to rank up"
+    },
+    {
+      "id": "v7_management_period_maxStatHint",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "globalEventEnabledHint:",
+      "maxLength": 25000,
+      "key": "maxStatHint",
+      "from": "Maximum upper limit for cast looks, skill, and mental stats.",
+      "to": "Maximum upper limit for cast looks, skill, and mental stats"
+    },
+    {
+      "id": "v7_management_period_discountRateRelativeHint",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "globalEventEnabledHint:",
+      "maxLength": 25000,
+      "key": "discountRateRelativeHint",
+      "from": "Discount rate applied when family members or close acquaintances visit. Higher values reduce revenue.",
+      "to": "Discount rate applied when family members or close acquaintances visit. Higher values reduce revenue"
+    },
+    {
+      "id": "v7_management_period_spGainMultiplierHint",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "globalEventEnabledHint:",
+      "maxLength": 25000,
+      "key": "spGainMultiplierHint",
+      "from": "Multiplier for Skill Points (SP) gained from service and coaching.",
+      "to": "Multiplier for Skill Points (SP) gained from service and coaching"
+    },
+    {
+      "id": "v7_management_period_rankGainMultiplierHint",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "globalEventEnabledHint:",
+      "maxLength": 25000,
+      "key": "rankGainMultiplierHint",
+      "from": "Multiplier for EXP gained by casts.",
+      "to": "Multiplier for EXP gained by casts"
+    },
+    {
+      "id": "v7_management_period_boyfriendVisitRateHint",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "globalEventEnabledHint:",
+      "maxLength": 25000,
+      "key": "boyfriendVisitRateHint",
+      "from": "Multiplier for the chance of boyfriends visiting or nominating.",
+      "to": "Multiplier for the chance of boyfriends visiting or nominating"
+    },
+    {
+      "id": "v7_management_period_familyVisitRateHint",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "globalEventEnabledHint:",
+      "maxLength": 25000,
+      "key": "familyVisitRateHint",
+      "from": "Multiplier for the chance of family members (fathers, brothers) visiting.",
+      "to": "Multiplier for the chance of family members (fathers, brothers) visiting"
+    },
+    {
+      "id": "v7_management_period_guestDangerChanceMultiplierHint",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "globalEventEnabledHint:",
+      "maxLength": 25000,
+      "key": "guestDangerChanceMultiplierHint",
+      "from": "Multiplier for guests attempting dangerous acts (forced acts). 0.0 disables them.",
+      "to": "Multiplier for guests attempting dangerous acts (forced acts). 0.0 disables them"
+    },
+    {
+      "id": "v7_settings_period_malePregnancyDesc",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "},zn={category:",
+      "maxLength": 50000,
+      "key": "malePregnancyDesc",
+      "from": "When enabled, male casts can also be fertilized and become pregnant from creampies by male guests (Omegaverse).",
+      "to": "When enabled, male casts can also be fertilized and become pregnant from creampies by male guests (Omegaverse)"
+    },
+    {
+      "id": "v7_settings_period_castGenderSwitchHint",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "},zn={category:",
+      "maxLength": 50000,
+      "key": "castGenderSwitchHint",
+      "from": "Filter cast genders that appear in scouting and assignments.",
+      "to": "Filter cast genders that appear in scouting and assignments"
+    },
+    {
+      "id": "v7_settings_period_guestGenderSwitchHint",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "},zn={category:",
+      "maxLength": 50000,
+      "key": "guestGenderSwitchHint",
+      "from": "Filter guest genders that visit the club.",
+      "to": "Filter guest genders that visit the club"
+    },
+    {
+      "id": "v7_settings_period_castEventsDesc",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "},zn={category:",
+      "maxLength": 50000,
+      "key": "castEventsDesc",
+      "from": "Toggle intra-cast training, coaching, and sexual action commands (Default: Disabled).",
+      "to": "Toggle intra-cast training, coaching, and sexual action commands (Default: Disabled)"
+    },
+    {
+      "id": "v7_settings_period_enableHeteroCastEventsLongHint",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "},zn={category:",
+      "maxLength": 50000,
+      "key": "enableHeteroCastEventsLongHint",
+      "from": "Enable interaction and coaching commands between male and female casts.",
+      "to": "Enable interaction and coaching commands between male and female casts"
+    },
+    {
+      "id": "v7_settings_period_enableYuriCastEventsLongHint",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "},zn={category:",
+      "maxLength": 50000,
+      "key": "enableYuriCastEventsLongHint",
+      "from": "Enable intimate yuri events and coaching commands between female casts.",
+      "to": "Enable intimate yuri events and coaching commands between female casts"
+    },
+    {
+      "id": "v7_settings_period_enableBlCastEventsLongHint",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "},zn={category:",
+      "maxLength": 50000,
+      "key": "enableBlCastEventsLongHint",
+      "from": "Enable intimate BL events and coaching commands between male casts.",
+      "to": "Enable intimate BL events and coaching commands between male casts"
+    },
+    {
+      "id": "v7_settings_period_guestCastEventsDesc",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "},zn={category:",
+      "maxLength": 50000,
+      "key": "guestCastEventsDesc",
+      "from": "Toggle sexual acts, special events, and paid private summons between guests and casts.",
+      "to": "Toggle sexual acts, special events, and paid private summons between guests and casts"
+    },
+    {
+      "id": "v7_settings_period_enableHeteroGuestEventsLongHint",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "},zn={category:",
+      "maxLength": 50000,
+      "key": "enableHeteroGuestEventsLongHint",
+      "from": "Enable special sexual services between male guests × female casts and vice versa.",
+      "to": "Enable special sexual services between male guests × female casts and vice versa"
+    },
+    {
+      "id": "v7_settings_period_enableYuriGuestEventsLongHint",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "},zn={category:",
+      "maxLength": 50000,
+      "key": "enableYuriGuestEventsLongHint",
+      "from": "Enable intimate yuri acts and sessions with female guests.",
+      "to": "Enable intimate yuri acts and sessions with female guests"
+    },
+    {
+      "id": "v7_settings_period_enableBlGuestEventsLongHint",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "},zn={category:",
+      "maxLength": 50000,
+      "key": "enableBlGuestEventsLongHint",
+      "from": "Enable intimate BL acts and sessions with male guests.",
+      "to": "Enable intimate BL acts and sessions with male guests"
+    },
+    {
+      "id": "v7_settings_period_enableGuestPrivateSummonLongHint",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "},zn={category:",
+      "maxLength": 50000,
+      "key": "enableGuestPrivateSummonLongHint",
+      "from": "Enable paying honorarium to summon guests after hours for private sessions.",
+      "to": "Enable paying honorarium to summon guests after hours for private sessions"
+    },
+    {
+      "id": "v7_settings_period_globalEventEnabledHint",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "},zn={category:",
+      "maxLength": 50000,
+      "key": "globalEventEnabledHint",
+      "from": "When OFF, automatically skips daily dialogues, result boyfriend scenes, matching events, and item reactions for faster progression.",
+      "to": "When OFF, automatically skips daily dialogues, result boyfriend scenes, matching events, and item reactions for faster progression"
+    },
+    {
+      "id": "v7_settings_period_textSpeedDesc",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "},zn={category:",
+      "maxLength": 50000,
+      "key": "textSpeedDesc",
+      "from": "Set the typing animation speed for story and dialogue text.",
+      "to": "Set the typing animation speed for story and dialogue text"
+    },
+    {
+      "id": "v7_settings_period_skipSeenEventsHint",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "},zn={category:",
+      "maxLength": 50000,
+      "key": "skipSeenEventsHint",
+      "from": "Automatically skips presentations for previously read events, playing only newly unlocked events.",
+      "to": "Automatically skips presentations for previously read events, playing only newly unlocked events"
+    },
+    {
+      "id": "v7_settings_period_enableDailyEventsHint",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "},zn={category:",
+      "maxLength": 50000,
+      "key": "enableDailyEventsHint",
+      "from": "Show cast feelings, small talk, and consultation events during morning and routine progression.",
+      "to": "Show cast feelings, small talk, and consultation events during morning and routine progression"
+    },
+    {
+      "id": "v7_settings_period_enableResultBoyfriendEventsHint",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "},zn={category:",
+      "maxLength": 50000,
+      "key": "enableResultBoyfriendEventsHint",
+      "from": "Show ADV scenes like secret meetings, confrontations, pure love, or pregnancy talks on the result screen.",
+      "to": "Show ADV scenes like secret meetings, confrontations, pure love, or pregnancy talks on the result screen"
+    },
+    {
+      "id": "v7_settings_period_enableMatchingAssignEventsHint",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "},zn={category:",
+      "maxLength": 50000,
+      "key": "enableMatchingAssignEventsHint",
+      "from": "Show cast reactions (nervousness, first nomination, joy for high spenders) when assigned to guests.",
+      "to": "Show cast reactions (nervousness, first nomination, joy for high spenders) when assigned to guests"
+    },
+    {
+      "id": "v7_settings_period_enableSpecialGuestEventsHint",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "},zn={category:",
+      "maxLength": 50000,
+      "key": "enableSpecialGuestEventsHint",
+      "from": "Show special interaction scenes when serving specific guest types like teachers, virgins, or stalkers.",
+      "to": "Show special interaction scenes when serving specific guest types like teachers, virgins, or stalkers"
+    },
+    {
+      "id": "v7_settings_period_enableItemUsageEventsHint",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "},zn={category:",
+      "maxLength": 50000,
+      "key": "enableItemUsageEventsHint",
+      "from": "Displays ADV dialogues and reactions for pill prescriptions, luxury gifts, and special medications.",
+      "to": "Displays ADV dialogues and reactions for pill prescriptions, luxury gifts, and special medications"
+    },
+    {
+      "id": "v7_settings_period_debugModeHint",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "},zn={category:",
+      "maxLength": 50000,
+      "key": "debugModeHint",
+      "from": "When ON, allows direct editing of HUD stats, casts, and guests. Hidden in production builds.",
+      "to": "When ON, allows direct editing of HUD stats, casts, and guests. Hidden in production builds"
+    },
+    {
+      "id": "v7_settings_period_skipOwnerSetupHint",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "},zn={category:",
+      "maxLength": 50000,
+      "key": "skipOwnerSetupHint",
+      "from": "When enabled, skips the Owner profile setup in Normal/Endless mode and begins immediately with default values.",
+      "to": "When enabled, skips the Owner profile setup in Normal/Endless mode and begins immediately with default values"
+    },
+    {
+      "id": "v7_settings_period_sceneBgDesc",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "},zn={category:",
+      "maxLength": 50000,
+      "key": "sceneBgDesc",
+      "from": "Displays subtle thematic CG backgrounds matching each scene (waiting room, office, night floor, coaching room).",
+      "to": "Displays subtle thematic CG backgrounds matching each scene (waiting room, office, night floor, coaching room)"
+    },
+    {
+      "id": "v7_settings_period_customBgDesc",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "},zn={category:",
+      "maxLength": 50000,
+      "key": "customBgDesc",
+      "from": "Specify a custom local image to use as the master background (overrides scene backgrounds when active).",
+      "to": "Specify a custom local image to use as the master background (overrides scene backgrounds when active)"
+    },
+    {
+      "id": "v7_settings_period_resolutionDesc",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "},zn={category:",
+      "maxLength": 50000,
+      "key": "resolutionDesc",
+      "from": "Change the game window display size and screen resolution.",
+      "to": "Change the game window display size and screen resolution"
+    },
+    {
+      "id": "v7_settings_period_resetAchDesc",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "},zn={category:",
+      "maxLength": 50000,
+      "key": "resetAchDesc",
+      "from": "Resets all unlocked achievements, ending clear flags, and bonus points back to initial default state.",
+      "to": "Resets all unlocked achievements, ending clear flags, and bonus points back to initial default state"
+    },
+    {
+      "id": "v7_settings_period_debugModeActiveDesc",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "},zn={category:",
+      "maxLength": 50000,
+      "key": "debugModeActiveDesc",
+      "from": "Debug features are currently enabled. Disabling will hide the debug tab.",
+      "to": "Debug features are currently enabled. Disabling will hide the debug tab"
+    },
+    {
+      "id": "v7_settings_period_enableDepartureEventsDesc",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "},zn={category:",
+      "maxLength": 50000,
+      "key": "enableDepartureEventsDesc",
+      "from": "When casts experience low store reputation, extreme stress, or treatment against their will, staged departure events (such as resignation talks, customer redemption, or sudden departures) will trigger. If turned OFF, all departure talks, negotiations, and departures are completely disabled.",
+      "to": "When casts experience low store reputation, extreme stress, or treatment against their will, staged departure events (such as resignation talks, customer redemption, or sudden departures) will trigger. If turned OFF, all departure talks, negotiations, and departures are completely disabled"
+    },
+    {
+      "id": "v7_settings_period_dateAffectionReqHint",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "},zn={category:",
+      "maxLength": 50000,
+      "key": "dateAffectionReqHint",
+      "from": "Affection required to invite the cast member on a first date.",
+      "to": "Affection required to invite the cast member on a first date"
+    },
+    {
+      "id": "v7_settings_period_kissAffectionReqHint",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "},zn={category:",
+      "maxLength": 50000,
+      "key": "kissAffectionReqHint",
+      "from": "Affection required for kissing, foreplay, and intimate physical affection.",
+      "to": "Affection required for kissing, foreplay, and intimate physical affection"
+    },
+    {
+      "id": "v7_settings_period_confessionAffectionReqHint",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "},zn={category:",
+      "maxLength": 50000,
+      "key": "confessionAffectionReqHint",
+      "from": "Affection required to confess feelings and make her your exclusive girlfriend.",
+      "to": "Affection required to confess feelings and make her your exclusive girlfriend"
+    },
+    {
+      "id": "v7_settings_period_insertAffectionReqHint",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "},zn={category:",
+      "maxLength": 50000,
+      "key": "insertAffectionReqHint",
+      "from": "Affection required to engage in protected intercourse (with condom).",
+      "to": "Affection required to engage in protected intercourse (with condom)"
+    },
+    {
+      "id": "v7_settings_period_creampieAffectionReqHint",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "},zn={category:",
+      "maxLength": 50000,
+      "key": "creampieAffectionReqHint",
+      "from": "Affection required for unprotected sex and raw internal ejaculation.",
+      "to": "Affection required for unprotected sex and raw internal ejaculation"
+    },
+    {
+      "id": "v7_settings_period_dateHomeHint",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "},zn={category:",
+      "maxLength": 50000,
+      "key": "dateHomeHint",
+      "from": "Minimum number of dates required to unlock Home Dates.",
+      "to": "Minimum number of dates required to unlock Home Dates"
+    },
+    {
+      "id": "v7_settings_period_dateHotelHint",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "},zn={category:",
+      "maxLength": 50000,
+      "key": "dateHotelHint",
+      "from": "Minimum number of dates required to unlock Hotel Dates.",
+      "to": "Minimum number of dates required to unlock Hotel Dates"
+    },
+    {
+      "id": "v7_settings_period_dateKaraokeHint",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "},zn={category:",
+      "maxLength": 50000,
+      "key": "dateKaraokeHint",
+      "from": "Minimum number of dates required to unlock Karaoke Dates.",
+      "to": "Minimum number of dates required to unlock Karaoke Dates"
+    },
+    {
+      "id": "v7_settings_period_dateCinemaHint",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "},zn={category:",
+      "maxLength": 50000,
+      "key": "dateCinemaHint",
+      "from": "Minimum number of dates required to unlock Cinema Dates.",
+      "to": "Minimum number of dates required to unlock Cinema Dates"
+    },
+    {
+      "id": "v7_settings_period_dateRestaurantHint",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "},zn={category:",
+      "maxLength": 50000,
+      "key": "dateRestaurantHint",
+      "from": "Minimum number of dates required to unlock Fine Dining Restaurant Dates.",
+      "to": "Minimum number of dates required to unlock Fine Dining Restaurant Dates"
+    },
+    {
+      "id": "v7_settings_period_dateThemeParkHint",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "},zn={category:",
+      "maxLength": 50000,
+      "key": "dateThemeParkHint",
+      "from": "Minimum number of dates required to unlock Theme Park Dates.",
+      "to": "Minimum number of dates required to unlock Theme Park Dates"
+    },
+    {
+      "id": "v7_settings_period_romanceSuccessRateMultHint",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "},zn={category:",
+      "maxLength": 50000,
+      "key": "romanceSuccessRateMultHint",
+      "from": "Global probability multiplier for dates, confessions, and intimate actions.",
+      "to": "Global probability multiplier for dates, confessions, and intimate actions"
+    },
+    {
+      "id": "v7_settings_period_changeResolutionDesc",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "},zn={category:",
+      "maxLength": 50000,
+      "key": "changeResolutionDesc",
+      "from": "Change game window display size and screen resolution.",
+      "to": "Change game window display size and screen resolution"
+    },
+    {
+      "id": "v7_settings_period_debugModeDevDesc",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "},zn={category:",
+      "maxLength": 50000,
+      "key": "debugModeDevDesc",
+      "from": "When enabled, directly edit top HUD status values, cast, and guest data. Automatically hidden in commercial release.",
+      "to": "When enabled, directly edit top HUD status values, cast, and guest data. Automatically hidden in commercial release"
+    },
+    {
+      "id": "v7_settings_period_skipOwnerSetupDesc",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "},zn={category:",
+      "maxLength": 50000,
+      "key": "skipOwnerSetupDesc",
+      "from": "When enabled, skip initial owner profile setup and start game immediately with default parameters.",
+      "to": "When enabled, skip initial owner profile setup and start game immediately with default parameters"
+    },
+    {
+      "id": "v7_settings_period_contextualBgDesc",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "},zn={category:",
+      "maxLength": 50000,
+      "key": "contextualBgDesc",
+      "from": "Display translucent background CG tailored to each room's atmosphere (Lounge, Office, Night Lobby, Coaching Room).",
+      "to": "Display translucent background CG tailored to each room's atmosphere (Lounge, Office, Night Lobby, Coaching Room)"
+    },
+    {
+      "id": "v7_settings_period_globalCustomBgDesc",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "},zn={category:",
+      "maxLength": 50000,
+      "key": "globalCustomBgDesc",
+      "from": "Set a custom background image applied across the entire game (Takes priority over scene CG).",
+      "to": "Set a custom background image applied across the entire game (Takes priority over scene CG)"
+    },
+    {
+      "id": "v7_settings_period_enableAllEventsDesc",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "},zn={category:",
+      "maxLength": 50000,
+      "key": "enableAllEventsDesc",
+      "from": "When disabled, daily dialogues, settlement boyfriend scenes, matching reactions, and item scenes will be skipped to accelerate gameplay.",
+      "to": "When disabled, daily dialogues, settlement boyfriend scenes, matching reactions, and item scenes will be skipped to accelerate gameplay"
+    },
+    {
+      "id": "v7_settings_period_autoSkipSeenDesc",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "},zn={category:",
+      "maxLength": 50000,
+      "key": "autoSkipSeenDesc",
+      "from": "Automatically skips previously viewed event scenes and only plays new, unread events.",
+      "to": "Automatically skips previously viewed event scenes and only plays new, unread events"
+    },
+    {
+      "id": "v7_settings_period_batchPresetsDesc",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "},zn={category:",
+      "maxLength": 50000,
+      "key": "batchPresetsDesc",
+      "from": "Toggle all event scenes ON or OFF at once.",
+      "to": "Toggle all event scenes ON or OFF at once"
+    },
+    {
+      "id": "v7_settings_period_dailyEventsDesc",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "},zn={category:",
+      "maxLength": 50000,
+      "key": "dailyEventsDesc",
+      "from": "Displays morning and daily progress thoughts, chatter, and consultation events from cast members.",
+      "to": "Displays morning and daily progress thoughts, chatter, and consultation events from cast members"
+    },
+    {
+      "id": "v7_settings_period_resultBoyfriendEventsDesc",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "},zn={category:",
+      "maxLength": 50000,
+      "key": "resultBoyfriendEventsDesc",
+      "from": "Displays ADV scenes such as secret meetings, confrontations, pure romance, and pregnancy reports upon closing.",
+      "to": "Displays ADV scenes such as secret meetings, confrontations, pure romance, and pregnancy reports upon closing"
+    },
+    {
+      "id": "v7_settings_period_matchingEventsDesc",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "},zn={category:",
+      "maxLength": 50000,
+      "key": "matchingEventsDesc",
+      "from": "Shows reactions when a cast member is assigned or nominated (nervousness, first-time nomination, big spender joy, etc.).",
+      "to": "Shows reactions when a cast member is assigned or nominated (nervousness, first-time nomination, big spender joy, etc.)"
+    },
+    {
+      "id": "v7_settings_period_specialGuestEventsDesc",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "},zn={category:",
+      "maxLength": 50000,
+      "key": "specialGuestEventsDesc",
+      "from": "Dedicated scenes when serving special guest types such as teachers, virgins, or dangerous guests.",
+      "to": "Dedicated scenes when serving special guest types such as teachers, virgins, or dangerous guests"
+    },
+    {
+      "id": "v7_settings_period_itemUsageEventsDesc",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "},zn={category:",
+      "maxLength": 50000,
+      "key": "itemUsageEventsDesc",
+      "from": "ADV reaction scenes when taking birth control pills, giving luxury gifts, or administering medicine.",
+      "to": "ADV reaction scenes when taking birth control pills, giving luxury gifts, or administering medicine"
+    },
+    {
+      "id": "v7_settings_period_enableOtokonokoGuestEventsHint",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "},zn={category:",
+      "maxLength": 50000,
+      "key": "enableOtokonokoGuestEventsHint",
+      "from": "Enable special story events and visit notifications for crossdressing / femboy guests.",
+      "to": "Enable special story events and visit notifications for crossdressing / femboy guests"
+    },
+    {
+      "id": "v7_settings_period_enableFutanariCastEventsHint",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "},zn={category:",
+      "maxLength": 50000,
+      "key": "enableFutanariCastEventsHint",
+      "from": "Enables dedicated storyline events and ejaculation simulations for futanari casts.",
+      "to": "Enables dedicated storyline events and ejaculation simulations for futanari casts"
+    },
+    {
+      "id": "v7_settings_period_enableOtokonokoCastEventsHint",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "},zn={category:",
+      "maxLength": 50000,
+      "key": "enableOtokonokoCastEventsHint",
+      "from": "Enables unique storyline events and bodily concerns for femboy casts.",
+      "to": "Enables unique storyline events and bodily concerns for femboy casts"
+    },
+    {
+      "id": "v7_settings_period_enableFutanariGuestEventsHint",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "},zn={category:",
+      "maxLength": 50000,
+      "key": "enableFutanariGuestEventsHint",
+      "from": "Enables unique service interactions and insemination events for futanari guests.",
+      "to": "Enables unique service interactions and insemination events for futanari guests"
+    },
+    {
+      "id": "v7_settings_period_skipNewGameOverwriteConfirmHint",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "On={title:\"Settings / Data Management\"",
+      "objectEnd": "},zn={category:",
+      "maxLength": 50000,
+      "key": "skipNewGameOverwriteConfirmHint",
+      "from": "When enabled, starting Story or Normal mode begins immediately without asking to confirm overwriting existing data.",
+      "to": "When enabled, starting Story or Normal mode begins immediately without asking to confirm overwriting existing data"
+    },
+    {
+      "id": "v8_flat_english_play_revenue_hint",
+      "bundle": "dist/assets/index-TmdlfamN.js",
+      "objectStart": "\"settings.playRevenueRate\":\"Act Service Fee Multiplier\"",
+      "objectEnd": "\"settings.maxStat\":\"Attribute Caps",
+      "maxLength": 1000,
+      "key": "settings.playRevenueRateHint",
+      "from": "Multiplier applied to base rates of various acts during service.",
+      "to": "Multiplier applied to base rates of various acts during service"
+    }
+  ],
+  "additionalTranslations": [
+    {
+      "key": "settings.castAgePatch.yearsSuffix",
+      "ja": "歳",
+      "en": " yrs"
+    },
+    {
+      "key": "settings.castAgePatch.distributionLabel",
+      "ja": "年齢分布 ({{min}}〜{{max}}歳)",
+      "en": "Age distribution ({{min}}–{{max}})"
+    },
+    {
+      "key": "settings.castAgePatch.teenAge",
+      "ja": "18〜19歳",
+      "en": "18–19 yrs"
+    },
+    {
+      "key": "settings.castAgePatch.universityAge",
+      "ja": "20〜22歳",
+      "en": "20–22 yrs"
+    },
+    {
+      "key": "settings.castAgePatch.adultAge",
+      "ja": "23歳以上",
+      "en": "23+ yrs"
+    },
+    {
+      "key": "settings.castGenPatch.ratioSummary",
+      "ja": "高={{high}}% 大={{university}}% 社={{adult}}%",
+      "en": "HS={{high}}% Uni.={{university}}% Adult={{adult}}%"
+    },
+    {
+      "key": "settings.castGenPatch.virginHint",
+      "ja": "処女キャストの出現確率の倍率",
+      "en": "Multiplier for a new virgin cast member"
+    },
+    {
+      "key": "settings.castGenPatch.boyfriendHint",
+      "ja": "初期彼氏持ちキャストの出現倍率",
+      "en": "Multiplier for a new taken cast member"
+    },
+    {
+      "key": "settings.castGenPatch.brothersHint",
+      "ja": "キャストの実兄の人数 (0〜3人)",
+      "en": "Number of older biological brothers (0–3)"
+    },
+    {
+      "key": "settings.castGenPatch.multiplierUnit",
+      "ja": "倍",
+      "en": "×"
+    },
+    {
+      "key": "settings.guestPatch.familyVisitHint",
+      "ja": "キャストの父親や実兄など身内客が来店する確率の倍率",
+      "en": "Multiplier for visits from cast members' fathers and older brothers"
+    },
+    {
+      "key": "settings.guestPatch.classmateTeacherVisitHint",
+      "ja": "担任教員・学校の先輩・同級生が来店する確率の倍率",
+      "en": "Multiplier for visits from teachers, upperclassmen, and classmates"
+    },
+    {
+      "key": "settings.guestPatch.newGuestRelationHint",
+      "ja": "新規来店客が既存キャストの同級生・知人等として生成される確率",
+      "en": "Chance a new guest is an existing cast member’s classmate or acquaintance"
+    },
+    {
+      "key": "settings.guestPatch.holidayBoyfriendHint",
+      "ja": "休日に客とキャストが交際関係（彼氏）に発展する確率の倍率",
+      "en": "Multiplier for guests and cast members becoming couples on holidays"
+    },
+    {
+      "key": "settings.guestPatch.frustrationHint",
+      "ja": "風俗接客に対して彼氏が抱く不満度の上昇倍率",
+      "en": "Multiplier for how quickly boyfriends become dissatisfied with cast members ero work"
+    },
+    {
+      "key": "settings.guestPatch.breakupThresholdHint",
+      "ja": "不満度がこの値に達すると修羅場・破局イベントが発生します",
+      "en": "A breakup may occur when dissatisfaction reaches this value"
+    },
+    {
+      "key": "settings.guestPatch.dangerousClassmateHint",
+      "ja": "同級生客のうち、執着や強迫的な態度をとる危険な性格の出現比率",
+      "en": "Share of classmate guests with possessive or coercive personalities"
+    },
+    {
+      "key": "settings.guestPatch.wealthyClassmateHint",
+      "ja": "同級生客が高収入・小金持ちになる確率",
+      "en": "Chance a classmate guest has a high income or is relatively wealthy"
+    },
+    {
+      "key": "settings.guestPatch.poorBoyfriendHint",
+      "ja": "彼氏が低収入・無職で仕送りを要求してくる確率",
+      "en": "Chance a boyfriend is low-income or unemployed"
+    },
+    {
+      "key": "settings.guestPatch.multiplierUnit",
+      "ja": "倍",
+      "en": "×"
+    },
+    {
+      "key": "settings.romancePatch.multiplierUnit",
+      "ja": "倍",
+      "en": "×"
+    },
+    {
+      "key": "settings.pregnancyPatch.influxHighSchool",
+      "ja": "👧 学生・新成人 (18-19)",
+      "en": "High School"
+    },
+    {
+      "key": "settings.pregnancyPatch.influxUniversity",
+      "ja": "👩 大学生 (Univ)",
+      "en": "University"
+    },
+    {
+      "key": "settings.playPatch.actNameHeader",
+      "ja": "アクト名",
+      "en": "Act"
+    },
+    {
+      "key": "settings.playPatch.revenueTitle",
+      "ja": "💖 売上倍率",
+      "en": "💖 Revenue Multiplier"
+    },
+    {
+      "key": "settings.playPatch.revenueShort",
+      "ja": "💖売上",
+      "en": "💖 Revenue"
+    },
+    {
+      "key": "settings.playPatch.satisfactionTitle",
+      "ja": "💙 満足度上昇",
+      "en": "💙 Satisfaction Gain"
+    },
+    {
+      "key": "settings.playPatch.satisfactionShort",
+      "ja": "💙満足",
+      "en": "💙 Satisfaction"
+    },
+    {
+      "key": "settings.playPatch.mentalTitle",
+      "ja": "💔 精神消費",
+      "en": "💔 Mental Cost"
+    },
+    {
+      "key": "settings.playPatch.mentalShort",
+      "ja": "💔精神",
+      "en": "💔 Mental"
+    },
+    {
+      "key": "settings.pregnancyPatch.maleVirgin",
+      "ja": "うぶ専",
+      "en": "Male Virgin"
+    },
+    {
+      "key": "settings.balanceV8.playRevenueHint",
+      "ja": "接客中に行われる各行為の基本料金に対する倍率。",
+      "en": "Multiplier applied to base rates of various acts during service"
+    },
+    {
+      "key": "settings.balanceV8.dangerHint",
+      "ja": "顧客が危険な行為（強制プレイ等）を行う確率への倍率。0.0で発生しなくなります。",
+      "en": "Multiplier for guests attempting dangerous acts (forced acts). 0.0 disables them"
+    },
+    {
+      "key": "settings.balanceV8.multiplierSuffix",
+      "ja": "倍",
+      "en": "×"
+    }
+  ],
+  "exactEdits": [
+    {
+      "id": "age_distribution_axis",
+      "bundle": "dist/assets/main-DVhgjb_W.js",
+      "start": "const sh=({label:t,minAge:s,maxAge:a,weights:r,",
+      "end": "function pa({label:t,hint:s,value:a,",
+      "maxLength": 6000,
+      "replacements": [
+        {
+          "from": "children:[s,\"歳\"]",
+          "to": "children:[s,i(\"settings.castAgePatch.yearsSuffix\",\"歳\")]",
+          "expectedOccurrences": 1
+        },
+        {
+          "from": "children:[\"年齢分布 (\",s,\"〜\",a,\"歳)\"]",
+          "to": "children:i(\"settings.castAgePatch.distributionLabel\",\"年齢分布 ({{min}}〜{{max}}歳)\",{min:s,max:a})",
+          "expectedOccurrences": 1
+        },
+        {
+          "from": "children:[a,\"歳\"]",
+          "to": "children:[a,i(\"settings.castAgePatch.yearsSuffix\",\"歳\")]",
+          "expectedOccurrences": 1
+        }
+      ]
+    },
+    {
+      "id": "initial_traits_ages",
+      "bundle": "dist/assets/main-DVhgjb_W.js",
+      "start": "children:\"18〜19歳\"",
+      "end": "e.jsx(pa,{label:$(\"settings.virginRate\",\"処女率\"),value:N.castVirginRateAdult",
+      "maxLength": 5000,
+      "replacements": [
+        {
+          "from": "children:\"18〜19歳\"",
+          "to": "children:$(\"settings.castAgePatch.teenAge\",\"18〜19歳\")",
+          "expectedOccurrences": 1
+        },
+        {
+          "from": "children:\"20〜22歳\"",
+          "to": "children:$(\"settings.castAgePatch.universityAge\",\"20〜22歳\")",
+          "expectedOccurrences": 1
+        },
+        {
+          "from": "children:\"23歳以上\"",
+          "to": "children:$(\"settings.castAgePatch.adultAge\",\"23歳以上\")",
+          "expectedOccurrences": 1
+        }
+      ]
+    },
+    {
+      "id": "cast_generation_strings",
+      "bundle": "dist/assets/main-DVhgjb_W.js",
+      "start": "title:$(\"settings.sections.castGen\",\"キャスト初期能力・属性設定\")",
+      "end": "title:$(\"settings.ageRangesTitle\",\"キャスト年齢＆過去履歴詳細設定\")",
+      "maxLength": 7500,
+      "replacements": [
+        {
+          "from": "children:`高=${Me(N.castHighSchoolChance)}% 大=${Me(N.castUniversityChance)}% 社=${Me(N.castAdultChance)}%`",
+          "to": "children:$(\"settings.castGenPatch.ratioSummary\",\"高={{high}}% 大={{university}}% 社={{adult}}%\",{high:Me(N.castHighSchoolChance),university:Me(N.castUniversityChance),adult:Me(N.castAdultChance)})",
+          "expectedOccurrences": 1
+        },
+        {
+          "from": "hint:\"処女キャストの出現確率の倍率\"",
+          "to": "hint:$(\"settings.castGenPatch.virginHint\",\"処女キャストの出現確率の倍率\")",
+          "expectedOccurrences": 1
+        },
+        {
+          "from": "hint:\"初期彼氏持ちキャストの出現倍率\"",
+          "to": "hint:$(\"settings.castGenPatch.boyfriendHint\",\"初期彼氏持ちキャストの出現倍率\")",
+          "expectedOccurrences": 1
+        },
+        {
+          "from": "hint:\"キャストの実兄の人数 (0〜3人)\"",
+          "to": "hint:$(\"settings.castGenPatch.brothersHint\",\"キャストの実兄の人数 (0〜3人)\")",
+          "expectedOccurrences": 1
+        },
+        {
+          "from": "format:Gs,onChange:",
+          "to": "format:I=>`${(I??1).toFixed(1)}${$(\"settings.castGenPatch.multiplierUnit\",\"倍\")}`,onChange:",
+          "expectedOccurrences": 5
+        }
+      ]
+    },
+    {
+      "id": "guest_boyfriend_hardcoded_hints",
+      "bundle": "dist/assets/main-DVhgjb_W.js",
+      "start": "Ae===\"guests\"&&e.jsxs",
+      "end": "Ae===\"romance\"&&",
+      "maxLength": 14000,
+      "replacements": [
+        {
+          "from": "hint:\"キャストの父親や実兄など身内客が来店する確率の倍率\"",
+          "to": "hint:$(\"settings.guestPatch.familyVisitHint\",\"キャストの父親や実兄など身内客が来店する確率の倍率\")",
+          "expectedOccurrences": 1
+        },
+        {
+          "from": "hint:\"担任教員・学校の先輩・同級生が来店する確率の倍率\"",
+          "to": "hint:$(\"settings.guestPatch.classmateTeacherVisitHint\",\"担任教員・学校の先輩・同級生が来店する確率の倍率\")",
+          "expectedOccurrences": 1
+        },
+        {
+          "from": "hint:\"新規来店客が既存キャストの同級生・知人等として生成される確率\"",
+          "to": "hint:$(\"settings.guestPatch.newGuestRelationHint\",\"新規来店客が既存キャストの同級生・知人等として生成される確率\")",
+          "expectedOccurrences": 1
+        },
+        {
+          "from": "hint:\"休日に客とキャストが交際関係（彼氏）に発展する確率の倍率\"",
+          "to": "hint:$(\"settings.guestPatch.holidayBoyfriendHint\",\"休日に客とキャストが交際関係（彼氏）に発展する確率の倍率\")",
+          "expectedOccurrences": 1
+        },
+        {
+          "from": "hint:\"風俗接客に対して彼氏が抱く不満度の上昇倍率\"",
+          "to": "hint:$(\"settings.guestPatch.frustrationHint\",\"風俗接客に対して彼氏が抱く不満度の上昇倍率\")",
+          "expectedOccurrences": 1
+        },
+        {
+          "from": "hint:\"不満度がこの値に達すると修羅場・破局イベントが発生します\"",
+          "to": "hint:$(\"settings.guestPatch.breakupThresholdHint\",\"不満度がこの値に達すると修羅場・破局イベントが発生します\")",
+          "expectedOccurrences": 1
+        },
+        {
+          "from": "hint:\"同級生客のうち、執着や強迫的な態度をとる危険な性格の出現比率\"",
+          "to": "hint:$(\"settings.guestPatch.dangerousClassmateHint\",\"同級生客のうち、執着や強迫的な態度をとる危険な性格の出現比率\")",
+          "expectedOccurrences": 1
+        },
+        {
+          "from": "hint:\"同級生客が高収入・小金持ちになる確率\"",
+          "to": "hint:$(\"settings.guestPatch.wealthyClassmateHint\",\"同級生客が高収入・小金持ちになる確率\")",
+          "expectedOccurrences": 1
+        },
+        {
+          "from": "hint:\"彼氏が低収入・無職で仕送りを要求してくる確率\"",
+          "to": "hint:$(\"settings.guestPatch.poorBoyfriendHint\",\"彼氏が低収入・無職で仕送りを要求してくる確率\")",
+          "expectedOccurrences": 1
+        },
+        {
+          "from": "format:Gs,onChange:",
+          "to": "format:I=>`${(I??1).toFixed(1)}${$(\"settings.guestPatch.multiplierUnit\",\"倍\")}`,onChange:",
+          "expectedOccurrences": 10
+        }
+      ]
+    },
+    {
+      "id": "romance_multiplier_suffix",
+      "bundle": "dist/assets/main-DVhgjb_W.js",
+      "start": "Ae===\"romance\"&&e.jsxs(\"div\"",
+      "end": "Ae===\"pregnancy\"&&e.jsxs(\"div\"",
+      "maxLength": 10000,
+      "replacements": [
+        {
+          "from": "format:Gs",
+          "to": "format:I=>`${(I??1).toFixed(1)}${$(\"settings.romancePatch.multiplierUnit\",\"倍\")}`",
+          "expectedOccurrences": 2
+        }
+      ]
+    },
+    {
+      "id": "pregnancy_right_age_headers",
+      "bundle": "dist/assets/main-DVhgjb_W.js",
+      "start": "Ae===\"pregnancy\"&&e.jsxs(\"div\"",
+      "end": "Ae===\"balance\"&&",
+      "maxLength": 20000,
+      "replacements": [
+        {
+          "from": "$(\"settings.highSchool1819\",\"👧 学生・新成人 (18-19)\")",
+          "to": "$(\"settings.pregnancyPatch.influxHighSchool\",\"👧 学生・新成人 (18-19)\")",
+          "expectedOccurrences": 1
+        },
+        {
+          "from": "$(\"settings.univ\",\"👩 大学生 (Univ)\")",
+          "to": "$(\"settings.pregnancyPatch.influxUniversity\",\"👩 大学生 (Univ)\")",
+          "expectedOccurrences": 1
+        }
+      ]
+    },
+    {
+      "id": "play_details_column_labels",
+      "bundle": "dist/assets/main-DVhgjb_W.js",
+      "start": "Ae===\"plays\"&&",
+      "end": "Ae===\"sound\"&&e.jsxs",
+      "maxLength": 30000,
+      "replacements": [
+        {
+          "from": "$(\"settings.actNameHeader\",\"アクト名\")",
+          "to": "$(\"settings.playPatch.actNameHeader\",\"アクト名\")",
+          "expectedOccurrences": 1
+        },
+        {
+          "from": "title:\"💖 売上倍率\"",
+          "to": "title:$(\"settings.playPatch.revenueTitle\",\"💖 売上倍率\")",
+          "expectedOccurrences": 1
+        },
+        {
+          "from": "children:\"💖売上\"",
+          "to": "children:$(\"settings.playPatch.revenueShort\",\"💖売上\")",
+          "expectedOccurrences": 1
+        },
+        {
+          "from": "title:\"💙 満足度上昇\"",
+          "to": "title:$(\"settings.playPatch.satisfactionTitle\",\"💙 満足度上昇\")",
+          "expectedOccurrences": 1
+        },
+        {
+          "from": "children:\"💙満足\"",
+          "to": "children:$(\"settings.playPatch.satisfactionShort\",\"💙満足\")",
+          "expectedOccurrences": 1
+        },
+        {
+          "from": "title:\"💔 精神消費\"",
+          "to": "title:$(\"settings.playPatch.mentalTitle\",\"💔 精神消費\")",
+          "expectedOccurrences": 1
+        },
+        {
+          "from": "children:\"💔精神\"",
+          "to": "children:$(\"settings.playPatch.mentalShort\",\"💔精神\")",
+          "expectedOccurrences": 1
+        }
+      ]
+    },
+    {
+      "id": "pregnancy_guest_type_male_virgin",
+      "bundle": "dist/assets/main-DVhgjb_W.js",
+      "start": "label:$(\"settings.guestTypePureFavorite\",\"うぶ専\")",
+      "end": "value:N.introitusEjacChanceLoli",
+      "maxLength": 200,
+      "replacements": [
+        {
+          "from": "$(\"settings.guestTypePureFavorite\",\"うぶ専\")",
+          "to": "$(\"settings.pregnancyPatch.maleVirgin\",\"うぶ専\")",
+          "expectedOccurrences": 1
+        }
+      ]
+    },
+    {
+      "id": "v8_balance_visible_hints_and_badges",
+      "bundle": "dist/assets/main-DVhgjb_W.js",
+      "start": "Ae===\"balance\"&&",
+      "end": "Ae===\"plays\"&&",
+      "maxLength": 10000,
+      "replacements": [
+        {
+          "from": "$(\"settings.playRevenueRateHint\",\"接客中に行われる各行為の基本料金に対する倍率。\")",
+          "to": "$(\"settings.balanceV8.playRevenueHint\",\"接客中に行われる各行為の基本料金に対する倍率。\")",
+          "expectedOccurrences": 1
+        },
+        {
+          "from": "$(\"settings.guestDangerChanceMultiplierHint\",\"顧客が危険な行為（強制プレイ等）を行う確率への倍率。0.0で発生しなくなります。\")",
+          "to": "$(\"settings.balanceV8.dangerHint\",\"顧客が危険な行為（強制プレイ等）を行う確率への倍率。0.0で発生しなくなります。\")",
+          "expectedOccurrences": 1
+        },
+        {
+          "from": "format:Gs",
+          "to": "format:I=>`${(I??1).toFixed(1)}${$(\"settings.balanceV8.multiplierSuffix\",\"倍\")}`",
+          "expectedOccurrences": 12
+        }
+      ]
+    },
+    {
+      "id": "v9_pregnancy_three_day_badges",
+      "bundle": "dist/assets/main-DVhgjb_W.js",
+      "start": "e.jsx(pa,{label:$(\"settings.maternityLeaveDays\",\"産休日数\")",
+      "end": "e.jsxs(\"div\",{className:\"bg-purple-50/60 border border-purple-200/50 rounded-xl p-2 space-y-1\"",
+      "maxLength": 2000,
+      "replacements": [
+        {
+          "to": "value:N.maternityLeaveDays,min:1,max:60,step:1,format:I=>String(I),onChange:I=>$e(\"maternityLeaveDays\",I)",
+          "expectedOccurrences": 1,
+          "from": "value:N.maternityLeaveDays,min:1,max:60,step:1,format:Ia,onChange:I=>$e(\"maternityLeaveDays\",I)"
+        },
+        {
+          "to": "value:N.pregnancySignsDays,min:1,max:30,step:1,format:I=>String(I),onChange:I=>$e(\"pregnancySignsDays\",I)",
+          "expectedOccurrences": 1,
+          "from": "value:N.pregnancySignsDays,min:1,max:30,step:1,format:Ia,onChange:I=>$e(\"pregnancySignsDays\",I)"
+        },
+        {
+          "to": "value:N.pregnancyDiscoveryDays,min:1,max:60,step:1,format:I=>String(I),onChange:I=>$e(\"pregnancyDiscoveryDays\",I)",
+          "expectedOccurrences": 1,
+          "from": "value:N.pregnancyDiscoveryDays,min:1,max:60,step:1,format:Ia,onChange:I=>$e(\"pregnancyDiscoveryDays\",I)"
+        }
+      ]
+    }
+  ]
+}

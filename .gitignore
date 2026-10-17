@@ -1,0 +1,8 @@
+*.asar
+*.asar.unpacked/
+node_modules/
+*.zip
+*.log
+backups/
+temp/
+vendor/
