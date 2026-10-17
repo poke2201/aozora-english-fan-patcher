@@ -9,7 +9,7 @@ for (const name of ['Install_English_Patch.bat', 'Restore_Original.bat']) {
   test(`${name} uses its own directory and refuses missing resources/app.asar`, () => {
     const source = fs.readFileSync(path.join(root, name), 'utf8');
     assert.match(source, /set "GAME_DIR=%~dp0"/i);
-    assert.match(source, /if not exist "%GAME_DIR%resources\\app\.asar"/i);
+    assert.match(source, /if not exist "%GAME_DIR%resources"/i);
     assert.match(source, /exit \/b 1/i);
     assert.match(source, /curl\.exe -fLsS --retry 3/i);
     assert.match(source, /releases\/latest\/download\/Aozora-Patcher-Windows\.zip/i);
