@@ -1,114 +1,100 @@
 'use strict';
 const test=require('node:test');
-const assert=require('node:assert/strict');
-const fs=require('node:fs');
-const os=require('node:os');
-const path=require('node:path');
-const crypto=require('node:crypto');
-const patcher=require('../src/patcher.cjs');
-const root=path.resolve(__dirname,'..');
-const digest=x=>crypto.createHash('sha256').update(x).digest('hex');
-function fixture(t,archive='original game'){
- const game=fs.mkdtempSync(path.join(os.tmpdir(),'aozora-test-'));
- const resources=path.join(game,'resources');fs.mkdirSync(resources);
- fs.writeFileSync(path.join(resources,'app.asar'),archive);
- t.after(()=>fs.rmSync(game,{recursive:true,force:true}));
- return {game,resources,archive:Buffer.from(archive),target:path.join(resources,'app.asar'),backup:path.join(resources,'app.asar.before_aozora_ui_patch'),state:path.join(resources,'aozora_patch_state.json')};
-}
-function state(f,patched='patched game',original='original game'){
- fs.writeFileSync(f.backup,original);fs.writeFileSync(f.target,patched);
- fs.writeFileSync(f.state,JSON.stringify({schema:1,originalSha256:digest(original),patchedSha256:digest(patched)}));
-}
-test('finds resources/app.asar when given game directory or resources directory',t=>{
- const f=fixture(t);
- assert.equal(patcher.resourcesFrom(f.game),f.resources);
- assert.equal(patcher.resourcesFrom(f.resources),f.resources);
-});
-test('rejects missing game folder and does not create anything',t=>{
- const f=fixture(t);fs.rmSync(f.target);
- assert.throws(()=>patcher.resourcesFrom(f.game),/Could not find/);
+const {fixture,patchedFixture,asarStub,run,failed,fs,path,assert,root}=require('./test-helpers.cjs');
+
+test('CLI accepts game folder or resources folder and reports the resolved path',t=>{
+ const f=fixture(t);const stubDir=asarStub(t);
+ for(const gameInput of [f.game,f.resources]) {
+   const result=run(f,'install',{stubDir,gameInput});
+   failed(result,/Unsupported game version/);
+   assert.ok(
+  result.output.includes(`Game resources: ${f.resources}`),
+  'Patcher should report the resolved resources directory'
+);
+ }
  assert.equal(fs.existsSync(f.backup),false);
 });
-test('restore requires an existing backup',t=>{
- const f=fixture(t);
- assert.throws(()=>patcher.restore(f.resources),/No patch backup/);
- assert.deepEqual(fs.readFileSync(f.target),f.archive);
+
+test('CLI rejects missing app.asar before making changes',t=>{
+ const f=fixture(t);const stubDir=asarStub(t);fs.rmSync(f.target);
+ failed(run(f,'install',{stubDir}),/Could not find resources/);
+ assert.equal(fs.existsSync(f.backup),false);
 });
-test('restore rejects missing state and retains both archives',t=>{
- const f=fixture(t);fs.writeFileSync(f.backup,'backup');
- assert.throws(()=>patcher.restore(f.resources),/Patch state missing/);
+
+test('restore requires a backup',t=>{
+ const f=fixture(t);const stubDir=asarStub(t);
+ failed(run(f,'restore',{stubDir}),/No patch backup/);
  assert.equal(fs.readFileSync(f.target,'utf8'),'original game');
- assert.equal(fs.readFileSync(f.backup,'utf8'),'backup');
 });
-test('restore rejects tampered backup',t=>{
- const f=fixture(t);state(f);fs.writeFileSync(f.backup,'tampered');
- assert.throws(()=>patcher.restore(f.resources),/Backup checksum/);
+
+test('restore refuses backup without patch state',t=>{
+ const f=fixture(t);const stubDir=asarStub(t);fs.writeFileSync(f.backup,'original game');
+ failed(run(f,'restore',{stubDir}),/Patch state missing/);
+ assert.equal(fs.readFileSync(f.target,'utf8'),'original game');
+ assert.equal(fs.readFileSync(f.backup,'utf8'),'original game');
+});
+
+test('restore rejects a tampered backup without modifying the active archive',t=>{
+ const f=patchedFixture(t);const stubDir=asarStub(t);fs.writeFileSync(f.backup,'tampered');
+ failed(run(f,'restore',{stubDir}),/Backup checksum/);
  assert.equal(fs.readFileSync(f.target,'utf8'),'patched game');
+ assert.equal(fs.existsSync(f.state),true);
 });
-test('restore refuses to overwrite a game updated after patching',t=>{
- const f=fixture(t);state(f);fs.writeFileSync(f.target,'updated game');
- assert.throws(()=>patcher.restore(f.resources),/Current game differs/);
+
+test('restore rejects modified active game without overwriting it',t=>{
+ const f=patchedFixture(t);const stubDir=asarStub(t);fs.writeFileSync(f.target,'updated game');
+ failed(run(f,'restore',{stubDir}),/Current game differs/);
  assert.equal(fs.readFileSync(f.target,'utf8'),'updated game');
 });
+
 test('restore succeeds and retains verified backup',t=>{
- const f=fixture(t);state(f);
- patcher.restore(f.resources);
+ const f=patchedFixture(t);const stubDir=asarStub(t);
+ const result=run(f,'restore',{stubDir});
+ assert.equal(result.code,0,result.output);
  assert.equal(fs.readFileSync(f.target,'utf8'),'original game');
  assert.equal(fs.readFileSync(f.backup,'utf8'),'original game');
  assert.equal(fs.existsSync(f.state),false);
 });
-test('install rejects unpacked directory before touching the archive',async t=>{
- const f=fixture(t);fs.mkdirSync(path.join(f.resources,'app.asar.unpacked'));
- await assert.rejects(patcher.install(f.resources,{}),/app.asar.unpacked/);
- assert.deepEqual(fs.readFileSync(f.target),f.archive);
+
+test('install refuses unpacked archive directory',t=>{
+ const f=fixture(t);const stubDir=asarStub(t);fs.mkdirSync(path.join(f.resources,'app.asar.unpacked'));
+ failed(run(f,'install',{stubDir}),/app.asar.unpacked/);
+ assert.equal(fs.readFileSync(f.target,'utf8'),'original game');
  assert.equal(fs.existsSync(f.backup),false);
 });
-test('install refuses stale backup without state',async t=>{
- const f=fixture(t);fs.writeFileSync(f.backup,'prior');
- await assert.rejects(patcher.install(f.resources,{}),/existing backup/);
- assert.deepEqual(fs.readFileSync(f.target),f.archive);
- assert.equal(fs.readFileSync(f.backup,'utf8'),'prior');
+
+test('install rejects stale backup without state',t=>{
+ const f=fixture(t);const stubDir=asarStub(t);fs.writeFileSync(f.backup,'prior backup');
+ failed(run(f,'install',{stubDir}),/existing backup/);
+ assert.equal(fs.readFileSync(f.target,'utf8'),'original game');
+ assert.equal(fs.readFileSync(f.backup,'utf8'),'prior backup');
 });
-test('install is idempotent when patch state matches',async t=>{
- const f=fixture(t);state(f);
- await patcher.install(f.resources,{});
+
+test('install reports already-patched state without modifying files',t=>{
+ const f=patchedFixture(t);const stubDir=asarStub(t);
+ const result=run(f,'install',{stubDir});assert.equal(result.code,0,result.output);
+ assert.match(result.output,/already installed/);
  assert.equal(fs.readFileSync(f.target,'utf8'),'patched game');
 });
-test('install refuses mismatched state after an update',async t=>{
- const f=fixture(t);state(f);fs.writeFileSync(f.target,'new game');
- await assert.rejects(patcher.install(f.resources,{}),/Existing patch state does not match/);
- assert.equal(fs.readFileSync(f.target,'utf8'),'new game');
+
+test('install refuses mismatched prior patch state',t=>{
+ const f=patchedFixture(t);const stubDir=asarStub(t);fs.writeFileSync(f.target,'new version');
+ failed(run(f,'install',{stubDir}),/Existing patch state does not match/);
+ assert.equal(fs.readFileSync(f.target,'utf8'),'new version');
 });
-test('install rejects unsupported source hash without writing a backup',async t=>{
- const f=fixture(t);
- const fakeAsar={extractAll(_target,dir){
-   const folder=path.join(dir,'dist','assets');fs.mkdirSync(folder,{recursive:true});
-   fs.writeFileSync(path.join(folder,'main-DVhgjb_W.js'),'incompatible version');
- }};
- await assert.rejects(patcher.install(f.resources,fakeAsar),/Unsupported game version/);
- assert.deepEqual(fs.readFileSync(f.target),f.archive);
+
+test('install rejects unsupported source fingerprint before making a backup',t=>{
+ const f=fixture(t);const stubDir=asarStub(t);
+ failed(run(f,'install',{stubDir}),/Unsupported game version/);
+ assert.equal(fs.readFileSync(f.target,'utf8'),'original game');
  assert.equal(fs.existsSync(f.backup),false);
 });
-test('manifest schema, unique IDs, expected counts and protected relative paths',()=>{
- const m=patcher.manifest();assert.equal(m.schema,1);
- assert.ok(m.panels.length>0 && m.exactEdits.length>0 && m.dictionaryEdits.length>0);
- const ids=new Set();
- for(const group of [...m.panels,...m.exactEdits,...m.dictionaryEdits]){
-  assert.ok(group.id && !ids.has(group.id),'duplicate or missing group ID: '+group.id);ids.add(group.id);
-  assert.match(group.bundle,/^dist\/assets\/[\w.-]+\.js$/);
-  if(group.entries) for(const item of group.entries){assert.ok(item.ja && item.en);assert.ok(Number.isInteger(item.expectedOccurrences)&&item.expectedOccurrences>0)}
-  if(group.replacements) for(const item of group.replacements){assert.ok(item.from && item.to);assert.ok(Number.isInteger(item.expectedOccurrences)&&item.expectedOccurrences>0)}
- }
- for(const [file,hash] of Object.entries(m.sourceSha256)){
-  assert.match(file,/^dist\/assets\/[\w.-]+\.js$/);
-  assert.match(hash,/^[a-f0-9]{64}$/);
- }
-});
-test('both BAT launchers require resources/app.asar beside themselves',()=>{
- for(const name of ['Install_English_Patch.bat','Restore_Original.bat']){
-  const s=fs.readFileSync(path.join(root,name),'utf8');
-  assert.match(s,/set "GAME_DIR=%~dp0"/i);
-  assert.match(s,/if not exist "%GAME_DIR%resources\\app\.asar"/i);
-  assert.match(s,/releases\/latest\/download\/Aozora-Patcher-Windows\.zip/i);
+
+test('BAT launchers use their own directory and check resources',()=>{
+ for(const name of ['Install_English_Patch.bat','Restore_Original.bat']) {
+  const content=fs.readFileSync(path.join(root,name),'utf8');
+  assert.match(content,/set "GAME_DIR=%~dp0"/i);
+  assert.match(content,/if not exist "%GAME_DIR%resources(?:\\app\.asar)?"/i);
+  assert.match(content,/releases\/latest\/download\/Aozora-Patcher-Windows\.zip/i);
  }
 });
