@@ -44,11 +44,22 @@ function asarStub(t) {
   exports.createPackage=async()=>{throw Error('Mock archive must never be packaged')};
   exports.listPackage=()=>[];
   `);
+  // Explicit preload takes precedence over node_modules resolution, including CI.
+  fs.writeFileSync(path.join(base, 'preload.cjs'), `
+    const Module = require('node:module');
+    const originalLoad = Module._load;
+    Module._load = function(request, parent, isMain) {
+      if (request === '@electron/asar') {
+        return originalLoad.call(this, require('node:path').join(${JSON.stringify(dir)}, 'index.js'), parent, isMain);
+      }
+      return originalLoad.call(this, request, parent, isMain);
+    };
+  `);
   return base;
 }
 function run(f, operation, options={}) {
   const base=options.stubDir;
-  const result=spawnSync(process.execPath,[patcherScript,operation,options.gameInput||f.game],{
+  const result=spawnSync(process.execPath,[...(base?['--require',path.join(base,'preload.cjs')]:[]),patcherScript,operation,options.gameInput||f.game],{
     encoding:'utf8', timeout:15000,
     env:{...process.env,...(base?{NODE_PATH:[base,process.env.NODE_PATH].filter(Boolean).join(path.delimiter)}:{})}
   });
