@@ -95,6 +95,6 @@ test('BAT launchers use their own directory and check resources',()=>{
   const content=fs.readFileSync(path.join(root,name),'utf8');
   assert.match(content,/set "GAME_DIR=%~dp0"/i);
   assert.match(content,/if not exist "%GAME_DIR%resources(?:\\app\.asar)?"/i);
-  assert.match(content,/releases\/latest\/download\/Aozora-Patcher-Windows\.zip/i);
- }
+assert.match(content,/raw\.githubusercontent\.com\/poke2201\/aozora-english-fan-patcher\/main\/downloads\/Aozora-Patcher-Payload\.zip/i);
+}
 });
