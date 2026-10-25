@@ -28,10 +28,12 @@ test('builder stages exact translation without changing original input',t=>{
  assert.match(fs.readFileSync(path.join(f.output,index),'utf8'),/"test.label":"English"/);
  assert.ok(fs.existsSync(path.join(f.output,'aozora_patch_build_report.json')));
 });
-test('builder rejects changed source SHA without creating staging',t=>{
- const f=fixture(t);fs.writeFileSync(path.join(f.source,main),'modified begin title:"日本語" end');
- const r=f.run();assert.notEqual(r.status,0);assert.match(r.stderr,/Source hash differs/);
- assert.equal(fs.existsSync(f.output),false);
+test('builder permits source SHA mismatch when translation markers still match',t=>{
+ const f=fixture(t);const changed='modified begin title:"日本語" end';
+ fs.writeFileSync(path.join(f.source,main),changed);
+ const r=f.run();assert.equal(r.status,0,r.stderr);
+ assert.equal(fs.readFileSync(path.join(f.source,main),'utf8'),changed);
+ assert.match(fs.readFileSync(path.join(f.output,main),'utf8'),/\$\("test.label","日本語"\)/);
 });
 test('builder rejects missing exact translation match without staging',t=>{
  const f=fixture(t);f.m.panels[0].entries[0].ja='別の文字列';f.save();

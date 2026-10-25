@@ -46,9 +46,9 @@ async function install(resources){
   assert(!fileExists(backup),'An existing backup was found without patch state. Restore or archive it manually before proceeding');
   console.log('Extracting original game archive...');
   asar.extractAll(target,extracted);
-  for(const [relative,expected] of Object.entries(m.sourceSha256)){
+  for(const relative of Object.keys(m.sourceSha256)){
    const f=path.join(extracted,...relative.split('/'));
-   assert(fileExists(f)&&sha(f)===expected,'Unsupported game version: '+relative+' hash mismatch');
+   assert(fileExists(f),'Missing game bundle: '+relative);
   }
   console.log('Applying translation manifest...');
   const build=cp.spawnSync(process.execPath,[path.join(__dirname,'build_aozora_patch_v2.cjs'),path.join(__dirname,'..','manifests','aozora_patch_manifest.json'),'staging'],{cwd:extracted,stdio:'inherit'});

@@ -6,7 +6,7 @@ test('CLI accepts game folder or resources folder and reports the resolved path'
  const f=fixture(t);const stubDir=asarStub(t);
  for(const gameInput of [f.game,f.resources]) {
    const result=run(f,'install',{stubDir,gameInput});
-   failed(result,/Unsupported game version/);
+   failed(result,/cast_gender_switch start marker: expected exactly 1 match, found 0/);
    assert.ok(
   result.output.includes(`Game resources: ${f.resources}`),
   'Patcher should report the resolved resources directory'
@@ -83,9 +83,9 @@ test('install refuses mismatched prior patch state',t=>{
  assert.equal(fs.readFileSync(f.target,'utf8'),'new version');
 });
 
-test('install rejects unsupported source fingerprint before making a backup',t=>{
+test('install rejects missing translation markers without making a backup',t=>{
  const f=fixture(t);const stubDir=asarStub(t);
- failed(run(f,'install',{stubDir}),/Unsupported game version/);
+ failed(run(f,'install',{stubDir}),/cast_gender_switch start marker: expected exactly 1 match, found 0/);
  assert.equal(fs.readFileSync(f.target,'utf8'),'original game');
  assert.equal(fs.existsSync(f.backup),false);
 });

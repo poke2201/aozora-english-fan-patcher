@@ -19,7 +19,6 @@ const q = s => JSON.stringify(s);
 function mustString(x,desc) {assert(typeof x === 'string' && x.length > 0,`${desc} must be nonempty string`);return x;}
 function validRel(rel){mustString(rel,'bundle path');const normalized=rel.replace(/\\/g,'/');assert(!path.isAbsolute(rel) && !normalized.split('/').includes('..') && normalized.endsWith('.js'),'Unsafe/invalid bundle path: '+rel);return normalized;}
 function requiredOne(hay,needle,desc) { const n=count(hay,needle);assert(n===1,`${desc}: expected exactly 1 match, found ${n}`);return hay.indexOf(needle); }
-function matchExpectedHash(file,data,expected){ if (expected) assert(hash(data)===expected,`Source hash differs for ${file}. Game version may have changed; refusing to patch.`); }
 // Find a string property's VALUE in a bounded object, allowing quoted or unquoted simple names.
 function changeDictionaryValue(segment,change){
   mustString(change.key,'dictionary key');mustString(change.from,'dictionary old value');
@@ -51,7 +50,7 @@ try {
   assert(!fs.existsSync(output),`Output already exists: ${output}. Rename/delete the prior staging directory before rebuilding.`);
   const mainRel='dist/assets/main-DVhgjb_W.js', indexRel='dist/assets/index-TmdlfamN.js';
   const files=new Map();
-  function content(rel){rel=validRel(rel);if(!files.has(rel)){const full=path.join(source,rel);assert(isInside(source,full),'Bundle escaped extracted_app');assert(fs.existsSync(full),'Missing source bundle '+rel);const old=fs.readFileSync(full,'utf8');matchExpectedHash(rel,old,manifest.sourceSha256?.[rel]);files.set(rel,{old,now:old});}return files.get(rel);}
+  function content(rel){rel=validRel(rel);if(!files.has(rel)){const full=path.join(source,rel);assert(isInside(source,full),'Bundle escaped extracted_app');assert(fs.existsSync(full),'Missing source bundle '+rel);const old=fs.readFileSync(full,'utf8');files.set(rel,{old,now:old});}return files.get(rel);}
   const audit=[];
   const pendingByLanguage = {ja:new Map(),en:new Map()};
   for (const panel of manifest.panels){
